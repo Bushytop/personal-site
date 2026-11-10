@@ -1,0 +1,144 @@
+"""Checks on the rendered site. Requires quarto on PATH (~/.local/bin)."""
+import json
+import re
+from pathlib import Path
+
+from conftest import ROOT, page
+
+
+def _html_files(site: Path):
+    files = [p for p in site.rglob("*.html") if "site_libs" not in p.parts]
+    assert files, "no rendered pages"
+    return files
+
+
+def test_every_page_title_has_name(site):
+    for p in _html_files(site):
+        title = re.search(r"<title>(.*?)</title>", p.read_text(), re.S)
+        assert title and "Andy Chamberlin" in title.group(1), p
+
+
+def test_no_raw_email_in_site(site):
+    assert _html_files(site)
+    for p in site.rglob("*"):
+        if p.is_file() and p.suffix in {".html", ".js", ".xml", ".json", ".txt"}:
+            text = p.read_text(errors="ignore")
+            assert "@" + "gmail.com" not in text, p
+            assert "hello" + "@" + "andychamberlin.com" not in text, p
+
+
+def test_jsonld_person(site):
+    m = re.search(r'<script type="application/ld\+json">(.*?)</script>', page("index.html"), re.S)
+    data = json.loads(m.group(1))
+    prof = json.loads((ROOT / "_data" / "profile.json").read_text())
+    assert data["@type"] == "Person"
+    assert set(data["sameAs"]) == {prof[k] for k in ("orcid", "scholar", "github", "linkedin")}
+
+
+def test_publications_page_from_export(site):
+    html = page("publications.html")
+    assert re.search(r"<strong>[^<]*Chamberlin</strong>", html)
+    assert "doi.org/10.1073/pnas.1903698116" in html
+
+
+def test_sitemap_and_og(site):
+    assert (site / "sitemap.xml").exists()
+    assert 'property="og:image"' in page("index.html")
+
+
+def test_cname(site):
+    assert (site / "CNAME").read_text().strip() == "andychamberlin.com"
+
+
+LAUNCH_SLUGS = ["senegal-snail-habitat", "senegal-rice-fish", "brazil-snail-habitat",
+                "indonesia-tire-detection"]
+
+
+def test_home_sections_in_order(site):
+    html = page("index.html")
+    marks = ['class="hero', 'class="intro', 'class="service-card', 'class="project-tile',
+             'class="media-highlights', 'class="email"']
+    pos = [html.find(m) for m in marks]
+    assert all(p >= 0 for p in pos), dict(zip(marks, pos))
+    assert pos == sorted(pos)
+    assert html.count('class="service-card') == 2
+    assert html.count('class="project-tile') == 4
+
+
+def test_home_service_card_text(site):
+    heads = re.findall(r'class="service-card.*?<h3[^>]*>(.*?)</h3>', page("index.html"), re.S)
+    clean = [re.sub("<[^>]+>", "", h).replace("&amp;", "&").strip() for h in heads]
+    assert clean == ["Drone mapping & spatial analysis", "Satellite remote sensing & modeling"]
+
+
+def test_home_tiles_link_to_projects(site):
+    html = page("index.html")
+    for slug in LAUNCH_SLUGS:
+        assert f'href="projects/{slug}.html"' in html, slug
+
+
+def test_images_have_alt(site):
+    for p in _html_files(site):
+        for tag in re.findall(r"<img\b[^>]*>", p.read_text()):
+            m = re.search(r'alt="([^"]*)"', tag)
+            assert m and m.group(1).strip(), (p.name, tag[:120])
+
+
+def test_referenced_images_exist(site):
+    for p in _html_files(site):
+        for src in re.findall(r'<img\b[^>]*src="([^"]+)"', p.read_text()):
+            if not src.startswith(("http", "data:")):
+                assert (p.parent / src).resolve().exists(), (p.name, src)
+
+
+def test_draft_project_not_rendered(site):
+    assert not (site / "projects" / "costa-rica-dengue.html").exists()
+    for p in _html_files(site):
+        assert "costa-rica-dengue" not in p.read_text(), p
+    assert "costa-rica-dengue" not in (site / "sitemap.xml").read_text()
+
+
+def test_project_pages_link_papers(site):
+    expect = {
+        "senegal-snail-habitat": "doi.org/10.1073/pnas.1903698116",
+        "indonesia-tire-detection": "doi.org/10.1016/j.rsase.2026.102011",
+        "brazil-snail-habitat": "doi.org/10.1038/s41467-024-48335-9",
+    }
+    for slug, doi in expect.items():
+        assert doi in page(f"projects/{slug}.html"), slug
+
+
+JARGON = ["segmentation", "phenotyping", "RADIO", "SAM", "LOSO", "U-Net", "foundation model"]
+
+
+def test_no_jargon_on_project_pages(site):
+    for slug in LAUNCH_SLUGS:
+        html = page(f"projects/{slug}.html")
+        body = re.search(r"<main.*?</main>", html, re.S).group(0)
+        text = re.sub(r"<[^>]+>", " ", body)
+        for word in JARGON:
+            assert not re.search(rf"\b{re.escape(word)}\b", text, re.I), (slug, word)
+
+
+MEDIA_URLS = [
+    "https://www.npr.org/2026/07/12/nx-s1-5803170/farmers-fish-rice-snails-tropical-disease",
+    "https://news.stanford.edu/stories/2026/03/ai-platform-disease-mapping-schistosomiasis-research",
+    "https://news.stanford.edu/stories/2026/01/schistosomiasis-river-fever-transmission-research",
+    "https://www.montereybayfisheriestrust.org/future-of-blue/trends-report",
+]
+
+
+def test_media_order_newest_first(site):
+    items = re.findall(r"<li>\s*(\d{4})-(\d{2})", page("media.html"))
+    assert len(items) >= 4
+    assert items == sorted(items, reverse=True)
+
+
+def test_media_known_items(site):
+    html = page("media.html")
+    for url in MEDIA_URLS:
+        assert url in html, url
+
+
+def test_contact_page_has_email_hook(site):
+    assert re.search(r'<a class="email"[^>]*data-u="hello"', page("contact.html"))

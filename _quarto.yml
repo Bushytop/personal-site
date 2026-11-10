@@ -1,0 +1,51 @@
+project:
+  type: website
+  resources:
+    - CNAME
+    - assets/
+  render:
+    - "*.qmd"
+    - "!_data/"
+
+website:
+  title: "Andy Chamberlin"
+  site-url: https://andychamberlin.com
+  description: "Drone and satellite mapping of landscapes, crops and disease risk."
+  image: assets/img/share.jpg
+  open-graph: true
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: projects/index.qmd
+        text: Projects
+      - href: publications.qmd
+        text: Publications
+      - href: media.qmd
+        text: Media
+      - href: contact.qmd
+        text: Contact
+    right:
+      - text: ORCID
+        href: https://orcid.org/0000-0002-5657-8333
+      - icon: mortarboard
+        href: https://scholar.google.com/citations?user=JK03V_UAAAAJ
+        aria-label: Google Scholar
+      - icon: github
+        href: https://github.com/Bushytop
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://www.linkedin.com/in/andrew-chamberlin-1522a918/
+        aria-label: LinkedIn
+  page-footer:
+    center: "© Andy Chamberlin"
+
+format:
+  html:
+    theme:
+      light: [cosmo, styles/light.scss]
+      dark: [cosmo, styles/dark.scss]
+    css: styles/custom.css
+    toc: false
+    include-after-body:
+      text: '<script src="/assets/contact.js"></script>'

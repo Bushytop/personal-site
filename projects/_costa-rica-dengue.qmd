@@ -1,0 +1,6 @@
+---
+title: "Dengue habitat, Costa Rica"
+draft: true
+---
+
+Held until the preprint is posted. Rename to costa-rica-dengue.qmd (no underscore) to publish; Quarto skips files starting with _.

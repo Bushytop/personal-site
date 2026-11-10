@@ -1,0 +1,15 @@
+---
+title: "Media"
+description: "News coverage and films featuring my drone mapping and imagery."
+---
+
+Coverage that quotes me or uses my imagery, newest first. Headlines as published.
+
+<ul class="media-list">
+<li>2026-09 · Monterey Bay Fisheries Trust · <a href="https://www.montereybayfisheriestrust.org/future-of-blue/trends-report">Monterey Bay Commercial Fisheries: Status &amp; Trends Report</a></li>
+<li>2026-07 · NPR · <a href="https://www.npr.org/2026/07/12/nx-s1-5803170/farmers-fish-rice-snails-tropical-disease">A promising tale from Senegal of fish, rice … and dangerous worms</a></li>
+<li>2026-04 · Stanford Report · <a href="https://news.stanford.edu/stories/2026/04/mosquito-borne-disease-breeding-sites-drones-ai">Drones and AI take flight to combat mosquito-borne disease</a></li>
+<li>2026-03 · Stanford Report · <a href="https://news.stanford.edu/stories/2026/03/ai-platform-disease-mapping-schistosomiasis-research">AI platform maps disease risk from space</a></li>
+<li>2026-01 · Stanford Report · <a href="https://news.stanford.edu/stories/2026/01/schistosomiasis-river-fever-transmission-research">Researchers work to outrun the risk of ‘river fever’</a></li>
+<li>2019-03 · bioGraphic (California Academy of Sciences) · <a href="https://www.biographic.com/protected-by-prawns/">Protected by Prawns</a></li>
+</ul>

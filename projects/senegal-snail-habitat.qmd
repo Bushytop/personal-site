@@ -1,0 +1,26 @@
+---
+title: "Snail habitat, Senegal"
+pagetitle: "Snail habitat mapping, Senegal · Andy Chamberlin"
+description: "Drone mapping of water plants that harbor schistosomiasis snails along the Senegal River."
+image: ../assets/img/senegal-snail-tile.jpg
+image-alt: "Pond edged with dense water plants near a village in northern Senegal"
+date: 2016-08-01
+---
+
+::: {.gallery}
+![](../assets/img/senegal-snail-1.jpg){fig-alt="Open water with floating lily pads at a schistosomiasis study site in Senegal"}
+:::
+
+Schistosomiasis spreads through freshwater snails that shelter in water plants. Since 2016 I
+have led drone mapping at village water sites along the lower Senegal River, flying the early
+surveys and later training local partners to fly them. The maps show how much open water and
+how many water plants each site has.
+
+That plant cover turned out to predict how many children were infected better than counting
+snails did. It now guides where to remove plants and where to look for transmission.
+
+**Papers:** [Wood et al. 2019, *PNAS*](https://doi.org/10.1073/pnas.1903698116) ·
+[Chamberlin et al., *Geospatial Health*](https://doi.org/10.4081/gh.2020.818) ·
+[Liu et al. 2022, *Remote Sensing*](https://doi.org/10.3390/rs14061345)
+
+**News:** [Stanford Report, March 2026](https://news.stanford.edu/stories/2026/03/ai-platform-disease-mapping-schistosomiasis-research)

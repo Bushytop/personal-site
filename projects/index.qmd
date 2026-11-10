@@ -1,0 +1,9 @@
+---
+title: "Projects"
+listing:
+  contents: "*.qmd"
+  type: grid
+  sort: "date desc"
+  fields: [image, title, description]
+  image-height: 200px
+---

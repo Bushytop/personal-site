@@ -1,0 +1,7 @@
+---
+title: "Publications"
+---
+
+Generated from my [ORCID record](https://orcid.org/0000-0002-5657-8333). My name is in bold.
+
+{{< include _data/publications.md >}}

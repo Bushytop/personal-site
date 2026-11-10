@@ -1,0 +1,9 @@
+_site/
+.quarto/
+contact_sheet/
+__pycache__/
+.superpowers/
+
+/.quarto/
+**/*.quarto_ipynb
+image_roots.yml

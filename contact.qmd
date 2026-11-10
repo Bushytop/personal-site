@@ -1,0 +1,14 @@
+---
+title: "Contact"
+description: "Get in touch about drone mapping, remote sensing or research collaboration."
+---
+
+I'm glad to hear about collaborations, drone or satellite mapping projects, and speaking
+invitations.
+
+**Email:** <a class="email" data-u="hello" data-d="andychamberlin.com">email</a>
+
+**Elsewhere:** [ORCID](https://orcid.org/0000-0002-5657-8333) ·
+[Google Scholar](https://scholar.google.com/citations?user=JK03V_UAAAAJ) ·
+[GitHub](https://github.com/Bushytop) ·
+[LinkedIn](https://www.linkedin.com/in/andrew-chamberlin-1522a918/)

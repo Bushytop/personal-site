@@ -1,0 +1,42 @@
+# Source -> web image. Roots are local folders named in image_roots.yml (gitignored).
+# Provisional picks 2026-11-09; Andy reviews at copy review.
+- root: photos
+  src: Senegal_bestImages/DJI_0107.JPG
+  out: banner.jpg
+  alt: "Aerial view of a green river channel winding through dry farmland in the Senegal River valley"
+- root: photos
+  src: Senegal_bestImages/DJI_0107.JPG
+  out: share.jpg
+  alt: "Aerial view of a river channel in the Senegal River valley"
+- root: photos
+  src: Senegal_bestImages/DJI_0113_1.jpg
+  out: senegal-snail-tile.jpg
+  alt: "Pond edged with dense water plants near a village in northern Senegal"
+- root: photos
+  src: Senegal_bestImages/DJI_0107_1.jpg
+  out: senegal-snail-1.jpg
+  alt: "Open water with floating lily pads at a schistosomiasis study site in Senegal"
+- root: photos
+  src: Senegal_bestImages/DJI_0101.JPG
+  out: senegal-rice-tile.jpg
+  alt: "Irrigated fields along a channel in the Senegal River valley at sunrise"
+- root: photos
+  src: Brazil_JulyAug2019/Drone/20190723/DJI_0520.JPG
+  out: brazil-snail-tile.jpg
+  alt: "Pond in green hill pasture in southeastern Brazil, seen from a drone"
+- root: photos
+  src: Brazil_JulyAug2019/Drone/20190723/DJI_0505.JPG
+  out: brazil-snail-1.jpg
+  alt: "Drone view of a pond and stream below a small town in southeastern Brazil"
+- root: photos
+  src: Brazil_JulyAug2019/DSLR/20190722/DSC_0086.JPG
+  out: brazil-snail-2.jpg
+  alt: "Scooping a stream edge for freshwater snails in Brazil"
+- root: tire_paper
+  src: fig9.jpg
+  out: indonesia-tire-tile.jpg
+  alt: "Tires outlined in red on drone images of Makassar, Indonesia"
+- root: tire_paper
+  src: fig3.jpg
+  out: indonesia-tire-1.jpg
+  alt: "Drone map of Makassar with ground photos of tires and trash sites"
