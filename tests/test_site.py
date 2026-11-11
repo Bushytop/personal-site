@@ -240,7 +240,8 @@ def test_tire_model_is_ours(site):
 def test_about_page(site):
     html = page("about.html")
     body = re.search(r"<main.*?</main>", html, re.S).group(0)
-    for s in ("technical lead", "De Leo", "Rosser", "Mordecai", "Bayesian", "Part 107"):
+    for s in ("Disease Ecology in a Changing World (DECO)", "Center for Human and Planetary Health",
+              "De Leo", "Rosser", "Mordecai", "Bayesian", "Part 107", "Collaborators"):
         assert s in body, s
     assert 'href="./about.html"' in page("index.html") or 'href="about.html"' in page("index.html")
 

@@ -3,9 +3,11 @@ title: "About"
 description: "Andy Chamberlin, research data scientist at Stanford: drone and satellite mapping, computer vision and spatial modeling for disease ecology and agriculture."
 ---
 
-I'm a research data scientist at Stanford, working with the research groups of Giulio De Leo,
-Joelle Rosser and Erin Mordecai on schistosomiasis, dengue and the landscapes behind them. On
-most of these projects I'm the technical lead for the drone and remote sensing side.
+I'm a research data scientist at Stanford University in Disease Ecology in a Changing World
+(DECO), a research initiative of the Stanford Center for Human and Planetary Health co-led by
+Giulio De Leo and Erin Mordecai. I also work closely with Joelle Rosser's lab on dengue. On most
+of our projects I lead the drone and remote sensing work, from study design through published
+maps.
 
 ## What I do
 
@@ -29,10 +31,10 @@ I work across the whole arc of a project:
   models
 - **Tools:** Python, R, QGIS, GPU model training on Stanford's computing cluster
 
-## With others
+## Collaborators
 
-None of this is solo work. It rests on the field teams, labs and partners in Senegal, Brazil,
-Kenya, Indonesia and Costa Rica, and on the scientists who lead these projects.
+This work depends on field teams, labs and partners in Senegal, Brazil, Kenya, Indonesia and
+Costa Rica, and on the scientists who lead these projects.
 
 ## Background
 
