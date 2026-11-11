@@ -1,5 +1,173 @@
 [
   {
+    "objectID": "terms.html",
+    "href": "terms.html",
+    "title": "Terms of use",
+    "section": "",
+    "text": "Last updated November 11, 2026.\nText and images on this site are mine unless credited otherwise. Figures from papers are reused under their CC BY licenses, credited on each page.\nThe site and the map apps are provided as is, without warranty. The maps are research outputs; don’t use them for navigation, legal or medical decisions.\nThe Google API client described on the privacy page is for my personal use. No one else is authorized to use it.\nQuestions: see the contact page."
+  },
+  {
+    "objectID": "projects/snail-parasite-id.html",
+    "href": "projects/snail-parasite-id.html",
+    "title": "Snail and parasite identification",
+    "section": "",
+    "text": "Schistosomiasis surveys depend on telling snail species apart, and on spotting the human parasite among the many look-alike larvae that snails release. Both take trained experts, who are scarce in the places that need them.\nI co-developed deep learning models that identify medically important snails and parasite larvae from microscope and field photos taken in Senegal. They performed about as well as experienced parasitologists, and the labeled images were released for others to use.\n\n\n\nI’m now leading a new version with the De Leo lab, adding snails from Côte d’Ivoire and Brazil.\nPapers: Tallam et al. 2021, Frontiers in Public Health\nFigure from Tallam et al. 2021, CC BY."
+  },
+  {
+    "objectID": "projects/senegal-satellite-habitat.html",
+    "href": "projects/senegal-satellite-habitat.html",
+    "title": "Snail habitat from space, Senegal River basin",
+    "section": "",
+    "text": "Dams and irrigation along the Senegal River changed its water and fed the plants that schistosomiasis snails live in. Surveys on foot reach only a few sites; the risk spreads across the whole basin.\nWe built a deep learning model that maps floating plants, rooted plants, open water and land from high-resolution satellite images, using drone maps and field surveys to teach it what each looks like from above. I helped build, train and test the model, organized the image data, labeled the training maps and led the drone mapping behind them. The approach grew into an AI platform for mapping schistosomiasis risk from space.\n\n\n\nPapers: Liu et al. 2022, Remote Sensing\nNews: Stanford HAI, March 2020 · Stanford Report, March 2026 · Stanford HAI, March 2026"
+  },
+  {
+    "objectID": "projects/mosquito-breeding-sites.html",
+    "href": "projects/mosquito-breeding-sites.html",
+    "title": "Mosquito breeding sites: Indonesia, Kenya, Costa Rica",
+    "section": "",
+    "text": "Discarded tires and trash collect rainwater and are some of the most productive breeding sites for the mosquito that spreads dengue. Finding them on foot is slow and misses many.\n\nIndonesia: I trained the deep learning model that finds tires in drone imagery of Makassar, and I take the imagery from raw drone photos to finished maps. I’m now building the next model, which sorts trash piles into types as well as finding tires.\nKenya: the same group built a way to spot trash piles and tires in drone images and checked it against surveys on foot.\nCosta Rica: I planned drone flights in two regions and lead the analysis: testing whether our tire model works in towns it was never trained on, and scaling drone maps up to satellite imagery.\n\n\n\n\nPapers: Hassan, Chamberlin et al. 2026, Remote Sensing Applications: Society and Environment · Woo et al. 2026, Parasites & Vectors · Tarpenning et al. 2025, Parasites & Vectors · Rosser et al. 2024, Environmental Science and Pollution Research · Bramante et al. 2026, BMC Global and Public Health\nCode: Aedes-Tire-Detection (tire model, MIT license)\nFigures from Hassan, Chamberlin et al. 2026, CC BY-NC."
+  },
+  {
+    "objectID": "projects/brazil-snail-habitat.html",
+    "href": "projects/brazil-snail-habitat.html",
+    "title": "Snail habitat, Brazil",
+    "section": "",
+    "text": "In July and August 2019 I flew drone surveys of ponds, streams and pastures at schistosomiasis study sites in southeastern Brazil, alongside snail sampling on the ground.\nThe wider Brazil work maps where the snails can live across the country, and how climate and growing cities are shifting that range, using satellite data and species models.\n\n\n\nPapers: Glidden et al. 2024, Nature Communications · Singleton et al. 2024, PLOS Global Public Health · da Silva et al. 2024, PLOS NTD"
+  },
+  {
+    "objectID": "privacy.html",
+    "href": "privacy.html",
+    "title": "Privacy",
+    "section": "",
+    "text": "Last updated November 11, 2026."
+  },
+  {
+    "objectID": "privacy.html#this-site",
+    "href": "privacy.html#this-site",
+    "title": "Privacy",
+    "section": "This site",
+    "text": "This site\nThis site has no analytics, cookies or tracking scripts. It is hosted on GitHub Pages, which keeps standard server logs, including IP addresses, under GitHub’s privacy statement."
+  },
+  {
+    "objectID": "privacy.html#map-apps",
+    "href": "privacy.html#map-apps",
+    "title": "Privacy",
+    "section": "Map apps",
+    "text": "Map apps\nThe Earth Engine map apps linked from my project pages open without sign-in and collect nothing about you. Google runs them under its privacy policy."
+  },
+  {
+    "objectID": "privacy.html#google-api-client",
+    "href": "privacy.html#google-api-client",
+    "title": "Privacy",
+    "section": "Google API client",
+    "text": "Google API client\nI run a Google OAuth client, “rclone-yggdrasil”, for my own use only: it backs up files from my workstation to my own Google Drive. It is not offered to anyone else. It reads and writes only the Drive of the account that signs in to it, which is mine. That data moves only between my computer and my Drive; it is not shared, sold, or used to train AI models.\nUse of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements.\nQuestions: see the contact page."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Andy Chamberlin",
+    "section": "",
+    "text": "Drone and satellite mapping of landscapes and disease risk.\n  \n\n\n\n  I'm a research data scientist at Stanford. I map where disease-carrying snails and\n  mosquitoes live, and how water, plants and forests change across a landscape, from drone\n  flights up to satellite imagery. On most projects I lead the analysis from raw imagery to\n  finished maps, including the deep learning models that find tires and outline water plants.\n  My work spans Senegal, Brazil, Costa Rica, Indonesia and Kenya, and I also shoot and edit\n  photo and video from the field.\n\n\n\n  \n    Drone mapping & spatial analysis\n    Mosquito and snail habitat, vegetation and water mapping, crop monitoring, terrain and drainage.\n  \n  \n    Satellite remote sensing & modeling\n    Regional risk maps, habitat and species models, statistical modeling, and scaling drone results up to satellite.\n  \n  \n    Computer vision & deep learning\n    Custom models that find objects and map land cover in drone and satellite images, from labeled examples to finished maps.\n  \n\n\nProjects\n\n  \n    \n    Snail habitat, Senegal\n    Mapping the water plants where schistosomiasis snails live along the Senegal River.\n  \n  \n    \n    Rice and fish, Senegal\n    Estimating rice yield from drone and satellite imagery in fields stocked with fish.\n  \n  \n    \n    Forest canopy height, Borneo\n    Predicting rainforest height across Indonesian Borneo from free satellite data.\n    Image: Chamberlin et al. 2025, CC BY\n  \n  \n    \n    Mosquito breeding sites\n    Finding discarded tires and trash, where dengue mosquitoes breed, in drone images from Indonesia, Kenya and Costa Rica.\n    Image: Hassan, Chamberlin et al. 2026, CC BY-NC\n  \n\n\n\n  In the media\n  \n    NPR, July 2026: A promising tale from Senegal of fish, rice … and dangerous worms\n    Stanford Report, April 2026: Drones and AI take flight to combat mosquito-borne disease\n    Stanford Report, March 2026: AI platform maps disease risk from space\n    Stanford HAI, March 2020: Bringing AI to a Neglected Tropical Disease\n  \n  All media →\n\n\n\n  Get in touch: email"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I’m a research data scientist at Stanford University in Disease Ecology in a Changing World (DECO), a research initiative of the Stanford Center for Human and Planetary Health co-led by Giulio De Leo and Erin Mordecai. I also work closely with Joelle Rosser’s lab on dengue. On most of our projects I lead the drone and remote sensing work, from study design through published maps."
+  },
+  {
+    "objectID": "about.html#what-i-do",
+    "href": "about.html#what-i-do",
+    "title": "About",
+    "section": "What I do",
+    "text": "What I do\nI work across the whole arc of a project:\n\nShaping the questions and writing the grants\nDesigning studies and planning drone missions\nProcessing and calibrating drone and satellite imagery\nBuilding computer vision models that pull features out of that imagery\nAnalysis and modeling\nPresentations and papers"
+  },
+  {
+    "objectID": "about.html#methods",
+    "href": "about.html#methods",
+    "title": "About",
+    "section": "Methods",
+    "text": "Methods\n\nImagery: drone mapping, multispectral and spectral analysis, radiometric calibration, satellite imagery and Google Earth Engine\nTerrain and water: elevation models, hydrological modeling and flow routing\nComputer vision: deep learning to detect objects and map land cover, testing models in new places, scaling drone results up to satellite\nStatistics: spatial statistics, machine learning, Bayesian inference, species distribution models\nTools: Python, R, QGIS, GPU model training on Stanford’s computing cluster"
+  },
+  {
+    "objectID": "about.html#collaborators",
+    "href": "about.html#collaborators",
+    "title": "About",
+    "section": "Collaborators",
+    "text": "Collaborators\nThis work depends on field teams, labs and partners in Senegal, Brazil, Kenya, Indonesia and Costa Rica, and on the scientists who lead these projects."
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About",
+    "section": "Background",
+    "text": "Background\n\nB.S., Biology, University of Wisconsin–Madison\nFAA Part 107 remote pilot; private pilot license\nConsultant to Conservation International, mapping water-management infrastructure in sub-Saharan Africa (2019–2020)\nFrench and Spanish\nField photography and video"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "I’m glad to hear about collaborations, drone or satellite mapping projects, and speaking invitations.\nEmail: email\nElsewhere: ORCID · Google Scholar · GitHub · LinkedIn"
+  },
+  {
+    "objectID": "media.html",
+    "href": "media.html",
+    "title": "Media",
+    "section": "",
+    "text": "Coverage of projects and papers I’ve worked on, newest first. Headlines as published.\n\n\n2026-07 · Stanford Global Health · Harnessing AI and drones to combat mosquito-borne disease in a changing climate\n\n\n2026-07 · Stanford Woods Institute · Community-led health and livelihood programs helped protect rainforests during the pandemic\n\n\n2026-07 · NPR · A promising tale from Senegal of fish, rice … and dangerous worms\n\n\n2026-04 · Stanford Report · Drones and AI take flight to combat mosquito-borne disease\n\n\n2026-03 · Stanford Report · AI platform maps disease risk from space\n\n\n2026-03 · Stanford HAI · How a HAI Seed Grant Helped Launch a Disease-Fighting AI Platform\n\n\n2026-01 · Stanford Report · Researchers work to outrun the risk of ‘river fever’\n\n\n2025-09 · PLOS (EurekAlert!) · Reintroducing native African catfish into Lake Victoria reduced snail hosts and lowered schistosomiasis infection intensity in primary-school-aged children\n\n\n2025-06 · Frontiers for Young Minds · How Removing Overgrown Water Plants Can Help Kids Stay Healthy and Improve The Planet\n\n\n2024-08 · Stanford Report · Forecasting climate’s impact on a debilitating disease\n\n\n2024-06 · Stanford Global Health · Tracking trash and the risk of mosquito-borne disease with drones\n\n\n2023-08 · National Science Foundation · Eliminating public health scourge can also benefit agriculture\n\n\n2023-05 · Stanford Magazine · Just Add Prawns\n\n\n2020-10 · Stanford Global Health · Accessible Healthcare Could Be Key to Solving Climate Crisis\n\n\n2020-03 · Stanford HAI · Bringing AI to a Neglected Tropical Disease\n\n\n2019-10 · Stanford Woods Institute · Satellites and Drones Could Help Slow Tropical Disease\n\n\n2019-03 · bioGraphic (California Academy of Sciences) · Protected by Prawns"
+  },
+  {
+    "objectID": "projects/borneo-canopy-height.html",
+    "href": "projects/borneo-canopy-height.html",
+    "title": "Forest canopy height, Borneo",
+    "section": "",
+    "text": "Canopy height is a good guide to how much carbon a forest holds and where it is being degraded. Measuring it usually takes airborne lidar, which is costly and covers only narrow strips.\nI led a project that trained a deep learning model on lidar from 85 sites across Indonesian Borneo, paired with free satellite and terrain data. The model can predict canopy height at 30 m across Kalimantan wherever lidar is missing, and it was more accurate than the tree-based methods common in the field.\n\n\n\nForest loss. Building on the canopy height model, I mapped forest loss around villages in West Kalimantan for a study of how health care and livelihood programs held up during the pandemic.\nPapers: Chamberlin et al. 2025, Remote Sensing · Hopkins et al. 2026, The Lancet Planetary Health\nNews: Stanford Woods Institute, July 2026\nCode: canopy_height_ml (MIT license)\nFigures from Chamberlin et al. 2025, CC BY 4.0."
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Finding discarded tires and trash, where dengue mosquitoes breed, in drone images from Indonesia, Kenya and Costa Rica.\n\n\n\n\n\n\n\n\n\n\n\n\n\nEstimating rice yield from drone and satellite imagery in Senegal fields stocked with fish.\n\n\n\n\n\n\n\n\n\n\n\n\n\nDrone surveys and national maps of schistosomiasis snail habitat in Brazil.\n\n\n\n\n\n\n\n\n\n\n\n\n\nDrone mapping of water plants that harbor schistosomiasis snails along the Senegal River.\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/index.html#drone-mapping",
+    "href": "projects/index.html#drone-mapping",
+    "title": "Projects",
+    "section": "",
+    "text": "Finding discarded tires and trash, where dengue mosquitoes breed, in drone images from Indonesia, Kenya and Costa Rica.\n\n\n\n\n\n\n\n\n\n\n\n\n\nEstimating rice yield from drone and satellite imagery in Senegal fields stocked with fish.\n\n\n\n\n\n\n\n\n\n\n\n\n\nDrone surveys and national maps of schistosomiasis snail habitat in Brazil.\n\n\n\n\n\n\n\n\n\n\n\n\n\nDrone mapping of water plants that harbor schistosomiasis snails along the Senegal River.\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/index.html#satellite-mapping",
+    "href": "projects/index.html#satellite-mapping",
+    "title": "Projects",
+    "section": "Satellite mapping",
+    "text": "Satellite mapping\n\n\n\n\n\n\n\n\n\n\nForest canopy height, Borneo\n\n\nPredicting rainforest canopy height across Indonesian Borneo from free satellite data.\n\n\n\n\n\n\n\n\n\n\n\n\nSnail habitat from space, Senegal River basin\n\n\nDeep learning on satellite images to map the water plants where schistosomiasis snails live, across the Senegal River basin.\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/index.html#image-identification",
+    "href": "projects/index.html#image-identification",
+    "title": "Projects",
+    "section": "Image identification",
+    "text": "Image identification\n\n\n\n\n\n\n\n\n\n\nSnail and parasite identification\n\n\nDeep learning that identifies disease-carrying snails and schistosome parasites from photos.\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/senegal-rice-fish.html",
+    "href": "projects/senegal-rice-fish.html",
+    "title": "Rice and fish, Senegal",
+    "section": "",
+    "text": "Farmers in the Senegal River valley are testing fish in their rice fields: the fish eat the snails that carry schistosomiasis and can add income. The question for farmers is whether rice yield holds up.\nI use drone and satellite imagery from the 2025 season to estimate yield field by field and to spot problems such as weeds, bare patches and uneven water. Partners in Senegal fly the drone surveys; I lead the analysis, from calibrating the imagery to the deep learning and statistical models that estimate yield and flag problem areas. Results will be shared once they’re published.\nNews: NPR, July 2026 · Stanford Report, January 2026"
+  },
+  {
+    "objectID": "projects/senegal-snail-habitat.html",
+    "href": "projects/senegal-snail-habitat.html",
+    "title": "Snail habitat, Senegal",
+    "section": "",
+    "text": "Schistosomiasis spreads through freshwater snails that shelter in water plants. Since 2016 I have led drone mapping at village water sites along the lower Senegal River, flying the early surveys and later training local partners to fly them. The maps show how much of each site is open water and how much is covered by plants.\nThat plant cover turned out to predict how many children were infected better than counting snails did. It now guides where to remove plants and where to look for transmission.\nMapping plants by hand at every site doesn’t scale, so I’m building deep learning models that outline open water and floating and rooted plants in each drone map.\nPapers: Wood et al. 2019, PNAS · Chamberlin et al. 2021, Geospatial Health · Jones et al. 2021, PLOS NTD · Liu et al. 2022, Remote Sensing\nNews: Stanford Report, March 2026"
+  },
+  {
     "objectID": "publications.html",
     "href": "publications.html",
     "title": "Publications",
@@ -61,138 +229,5 @@
     "title": "Publications",
     "section": "2019",
     "text": "2019\n\nMartin C. Arostegui, Chelsea L. Wood, Isabel J. Jones, Andrew J. Chamberlin, Nicolas Jouanard, Djibril S. Faye, Armand M. Kuris, Gilles Riveau, Giulio A. De Leo, Susanne H. Sokolow. Potential Biological Control of Schistosomiasis by Fishes in the Lower Senegal River Basin. The American Journal of Tropical Medicine and Hygiene. doi:10.4269/ajtmh.18-0469\nChelsea L. Wood, Susanne H. Sokolow, Isabel J. Jones, Andrew J. Chamberlin, Kevin D. Lafferty, Armand M. Kuris, Merlijn Jocque, Skylar Hopkins, Grant Adams, Julia C. Buck, Andrea J. Lund, Ana E. Garcia-Vedrenne, Evan Fiorenza, Jason R. Rohr, Fiona Allan, Bonnie Webster, Muriel Rabone, Joanne P. Webster, Lydie Bandagny, Raphaël Ndione, Simon Senghor, Anne-Marie Schacht, Nicolas Jouanard, Gilles Riveau, Giulio A. De Leo. Precision mapping of snail habitat provides a powerful indicator of human schistosomiasis transmission. Proceedings of the National Academy of Sciences. doi:10.1073/pnas.1903698116"
-  },
-  {
-    "objectID": "projects/senegal-snail-habitat.html",
-    "href": "projects/senegal-snail-habitat.html",
-    "title": "Snail habitat, Senegal",
-    "section": "",
-    "text": "Schistosomiasis spreads through freshwater snails that shelter in water plants. Since 2016 I have led drone mapping at village water sites along the lower Senegal River, flying the early surveys and later training local partners to fly them. The maps show how much of each site is open water and how much is covered by plants.\nThat plant cover turned out to predict how many children were infected better than counting snails did. It now guides where to remove plants and where to look for transmission.\nMapping plants by hand at every site doesn’t scale, so I’m building deep learning models that outline open water and floating and rooted plants in each drone map.\nPapers: Wood et al. 2019, PNAS · Chamberlin et al. 2021, Geospatial Health · Jones et al. 2021, PLOS NTD · Liu et al. 2022, Remote Sensing\nNews: Stanford Report, March 2026"
-  },
-  {
-    "objectID": "projects/senegal-rice-fish.html",
-    "href": "projects/senegal-rice-fish.html",
-    "title": "Rice and fish, Senegal",
-    "section": "",
-    "text": "Farmers in the Senegal River valley are testing fish in their rice fields: the fish eat the snails that carry schistosomiasis and can add income. The question for farmers is whether rice yield holds up.\nI use drone and satellite imagery from the 2025 season to estimate yield field by field and to spot problems such as weeds, bare patches and uneven water. Partners in Senegal fly the drone surveys; I lead the analysis, from calibrating the imagery to the deep learning and statistical models that estimate yield and flag problem areas. Results will be shared once they’re published.\nNews: NPR, July 2026 · Stanford Report, January 2026"
-  },
-  {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Finding discarded tires and trash, where dengue mosquitoes breed, in drone images from Indonesia, Kenya and Costa Rica.\n\n\n\n\n\n\n\n\n\n\n\n\n\nEstimating rice yield from drone and satellite imagery in Senegal fields stocked with fish.\n\n\n\n\n\n\n\n\n\n\n\n\n\nDrone surveys and national maps of schistosomiasis snail habitat in Brazil.\n\n\n\n\n\n\n\n\n\n\n\n\n\nDrone mapping of water plants that harbor schistosomiasis snails along the Senegal River.\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/index.html#drone-mapping",
-    "href": "projects/index.html#drone-mapping",
-    "title": "Projects",
-    "section": "",
-    "text": "Finding discarded tires and trash, where dengue mosquitoes breed, in drone images from Indonesia, Kenya and Costa Rica.\n\n\n\n\n\n\n\n\n\n\n\n\n\nEstimating rice yield from drone and satellite imagery in Senegal fields stocked with fish.\n\n\n\n\n\n\n\n\n\n\n\n\n\nDrone surveys and national maps of schistosomiasis snail habitat in Brazil.\n\n\n\n\n\n\n\n\n\n\n\n\n\nDrone mapping of water plants that harbor schistosomiasis snails along the Senegal River.\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/index.html#satellite-mapping",
-    "href": "projects/index.html#satellite-mapping",
-    "title": "Projects",
-    "section": "Satellite mapping",
-    "text": "Satellite mapping\n\n\n\n\n\n\n\n\n\n\nForest canopy height, Borneo\n\n\nPredicting rainforest canopy height across Indonesian Borneo from free satellite data.\n\n\n\n\n\n\n\n\n\n\n\n\nSnail habitat from space, Senegal River basin\n\n\nDeep learning on satellite images to map the water plants where schistosomiasis snails live, across the Senegal River basin.\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/index.html#image-identification",
-    "href": "projects/index.html#image-identification",
-    "title": "Projects",
-    "section": "Image identification",
-    "text": "Image identification\n\n\n\n\n\n\n\n\n\n\nSnail and parasite identification\n\n\nDeep learning that identifies disease-carrying snails and schistosome parasites from photos.\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/borneo-canopy-height.html",
-    "href": "projects/borneo-canopy-height.html",
-    "title": "Forest canopy height, Borneo",
-    "section": "",
-    "text": "Canopy height is a good guide to how much carbon a forest holds and where it is being degraded. Measuring it usually takes airborne lidar, which is costly and covers only narrow strips.\nI led a project that trained a deep learning model on lidar from 85 sites across Indonesian Borneo, paired with free satellite and terrain data. The model can predict canopy height at 30 m across Kalimantan wherever lidar is missing, and it was more accurate than the tree-based methods common in the field.\n\n\n\nForest loss. Building on the canopy height model, I mapped forest loss around villages in West Kalimantan for a study of how health care and livelihood programs held up during the pandemic.\nPapers: Chamberlin et al. 2025, Remote Sensing · Hopkins et al. 2026, The Lancet Planetary Health\nNews: Stanford Woods Institute, July 2026\nCode: canopy_height_ml (MIT license)\nFigures from Chamberlin et al. 2025, CC BY 4.0."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Andy Chamberlin",
-    "section": "",
-    "text": "Drone and satellite mapping of landscapes and disease risk.\n  \n\n\n\n  I'm a research data scientist at Stanford. I map where disease-carrying snails and\n  mosquitoes live, and how water, plants and forests change across a landscape, from drone\n  flights up to satellite imagery. On most projects I lead the analysis from raw imagery to\n  finished maps, including the deep learning models that find tires and outline water plants.\n  My work spans Senegal, Brazil, Costa Rica, Indonesia and Kenya, and I also shoot and edit\n  photo and video from the field.\n\n\n\n  \n    Drone mapping & spatial analysis\n    Mosquito and snail habitat, vegetation and water mapping, crop monitoring, terrain and drainage.\n  \n  \n    Satellite remote sensing & modeling\n    Regional risk maps, habitat and species models, statistical modeling, and scaling drone results up to satellite.\n  \n  \n    Computer vision & deep learning\n    Custom models that find objects and map land cover in drone and satellite images, from labeled examples to finished maps.\n  \n\n\nProjects\n\n  \n    \n    Snail habitat, Senegal\n    Mapping the water plants where schistosomiasis snails live along the Senegal River.\n  \n  \n    \n    Rice and fish, Senegal\n    Estimating rice yield from drone and satellite imagery in fields stocked with fish.\n  \n  \n    \n    Forest canopy height, Borneo\n    Predicting rainforest height across Indonesian Borneo from free satellite data.\n    Image: Chamberlin et al. 2025, CC BY\n  \n  \n    \n    Mosquito breeding sites\n    Finding discarded tires and trash, where dengue mosquitoes breed, in drone images from Indonesia, Kenya and Costa Rica.\n    Image: Hassan, Chamberlin et al. 2026, CC BY-NC\n  \n\n\n\n  In the media\n  \n    NPR, July 2026: A promising tale from Senegal of fish, rice … and dangerous worms\n    Stanford Report, April 2026: Drones and AI take flight to combat mosquito-borne disease\n    Stanford Report, March 2026: AI platform maps disease risk from space\n    Stanford HAI, March 2020: Bringing AI to a Neglected Tropical Disease\n  \n  All media →\n\n\n\n  Get in touch: email"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "I’m a research data scientist at Stanford University in Disease Ecology in a Changing World (DECO), a research initiative of the Stanford Center for Human and Planetary Health co-led by Giulio De Leo and Erin Mordecai. I also work closely with Joelle Rosser’s lab on dengue. On most of our projects I lead the drone and remote sensing work, from study design through published maps."
-  },
-  {
-    "objectID": "about.html#what-i-do",
-    "href": "about.html#what-i-do",
-    "title": "About",
-    "section": "What I do",
-    "text": "What I do\nI work across the whole arc of a project:\n\nShaping the questions and writing the grants\nDesigning studies and planning drone missions\nProcessing and calibrating drone and satellite imagery\nBuilding computer vision models that pull features out of that imagery\nAnalysis and modeling\nPresentations and papers"
-  },
-  {
-    "objectID": "about.html#methods",
-    "href": "about.html#methods",
-    "title": "About",
-    "section": "Methods",
-    "text": "Methods\n\nImagery: drone mapping, multispectral and spectral analysis, radiometric calibration, satellite imagery and Google Earth Engine\nTerrain and water: elevation models, hydrological modeling and flow routing\nComputer vision: deep learning to detect objects and map land cover, testing models in new places, scaling drone results up to satellite\nStatistics: spatial statistics, machine learning, Bayesian inference, species distribution models\nTools: Python, R, QGIS, GPU model training on Stanford’s computing cluster"
-  },
-  {
-    "objectID": "about.html#collaborators",
-    "href": "about.html#collaborators",
-    "title": "About",
-    "section": "Collaborators",
-    "text": "Collaborators\nThis work depends on field teams, labs and partners in Senegal, Brazil, Kenya, Indonesia and Costa Rica, and on the scientists who lead these projects."
-  },
-  {
-    "objectID": "about.html#background",
-    "href": "about.html#background",
-    "title": "About",
-    "section": "Background",
-    "text": "Background\n\nB.S., Biology, University of Wisconsin–Madison\nFAA Part 107 remote pilot; private pilot license\nConsultant to Conservation International, mapping water-management infrastructure in sub-Saharan Africa (2019–2020)\nFrench and Spanish\nField photography and video"
-  },
-  {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
-    "section": "",
-    "text": "I’m glad to hear about collaborations, drone or satellite mapping projects, and speaking invitations.\nEmail: email\nElsewhere: ORCID · Google Scholar · GitHub · LinkedIn"
-  },
-  {
-    "objectID": "media.html",
-    "href": "media.html",
-    "title": "Media",
-    "section": "",
-    "text": "Coverage of projects and papers I’ve worked on, newest first. Headlines as published.\n\n\n2026-07 · Stanford Global Health · Harnessing AI and drones to combat mosquito-borne disease in a changing climate\n\n\n2026-07 · Stanford Woods Institute · Community-led health and livelihood programs helped protect rainforests during the pandemic\n\n\n2026-07 · NPR · A promising tale from Senegal of fish, rice … and dangerous worms\n\n\n2026-04 · Stanford Report · Drones and AI take flight to combat mosquito-borne disease\n\n\n2026-03 · Stanford Report · AI platform maps disease risk from space\n\n\n2026-03 · Stanford HAI · How a HAI Seed Grant Helped Launch a Disease-Fighting AI Platform\n\n\n2026-01 · Stanford Report · Researchers work to outrun the risk of ‘river fever’\n\n\n2025-09 · PLOS (EurekAlert!) · Reintroducing native African catfish into Lake Victoria reduced snail hosts and lowered schistosomiasis infection intensity in primary-school-aged children\n\n\n2025-06 · Frontiers for Young Minds · How Removing Overgrown Water Plants Can Help Kids Stay Healthy and Improve The Planet\n\n\n2024-08 · Stanford Report · Forecasting climate’s impact on a debilitating disease\n\n\n2024-06 · Stanford Global Health · Tracking trash and the risk of mosquito-borne disease with drones\n\n\n2023-08 · National Science Foundation · Eliminating public health scourge can also benefit agriculture\n\n\n2023-05 · Stanford Magazine · Just Add Prawns\n\n\n2020-10 · Stanford Global Health · Accessible Healthcare Could Be Key to Solving Climate Crisis\n\n\n2020-03 · Stanford HAI · Bringing AI to a Neglected Tropical Disease\n\n\n2019-10 · Stanford Woods Institute · Satellites and Drones Could Help Slow Tropical Disease\n\n\n2019-03 · bioGraphic (California Academy of Sciences) · Protected by Prawns"
-  },
-  {
-    "objectID": "projects/brazil-snail-habitat.html",
-    "href": "projects/brazil-snail-habitat.html",
-    "title": "Snail habitat, Brazil",
-    "section": "",
-    "text": "In July and August 2019 I flew drone surveys of ponds, streams and pastures at schistosomiasis study sites in southeastern Brazil, alongside snail sampling on the ground.\nThe wider Brazil work maps where the snails can live across the country, and how climate and growing cities are shifting that range, using satellite data and species models.\n\n\n\nPapers: Glidden et al. 2024, Nature Communications · Singleton et al. 2024, PLOS Global Public Health · da Silva et al. 2024, PLOS NTD"
-  },
-  {
-    "objectID": "projects/mosquito-breeding-sites.html",
-    "href": "projects/mosquito-breeding-sites.html",
-    "title": "Mosquito breeding sites: Indonesia, Kenya, Costa Rica",
-    "section": "",
-    "text": "Discarded tires and trash collect rainwater and are some of the most productive breeding sites for the mosquito that spreads dengue. Finding them on foot is slow and misses many.\n\nIndonesia: I trained the deep learning model that finds tires in drone imagery of Makassar, and I take the imagery from raw drone photos to finished maps. I’m now building the next model, which sorts trash piles into types as well as finding tires.\nKenya: the same group built a way to spot trash piles and tires in drone images and checked it against surveys on foot.\nCosta Rica: I planned drone flights in two regions and lead the analysis: testing whether our tire model works in towns it was never trained on, and scaling drone maps up to satellite imagery.\n\n\n\n\nPapers: Hassan, Chamberlin et al. 2026, Remote Sensing Applications: Society and Environment · Woo et al. 2026, Parasites & Vectors · Tarpenning et al. 2025, Parasites & Vectors · Rosser et al. 2024, Environmental Science and Pollution Research · Bramante et al. 2026, BMC Global and Public Health\nCode: Aedes-Tire-Detection (tire model, MIT license)\nFigures from Hassan, Chamberlin et al. 2026, CC BY-NC."
-  },
-  {
-    "objectID": "projects/senegal-satellite-habitat.html",
-    "href": "projects/senegal-satellite-habitat.html",
-    "title": "Snail habitat from space, Senegal River basin",
-    "section": "",
-    "text": "Dams and irrigation along the Senegal River changed its water and fed the plants that schistosomiasis snails live in. Surveys on foot reach only a few sites; the risk spreads across the whole basin.\nWe built a deep learning model that maps floating plants, rooted plants, open water and land from high-resolution satellite images, using drone maps and field surveys to teach it what each looks like from above. I helped build, train and test the model, organized the image data, labeled the training maps and led the drone mapping behind them. The approach grew into an AI platform for mapping schistosomiasis risk from space.\n\n\n\nPapers: Liu et al. 2022, Remote Sensing\nNews: Stanford HAI, March 2020 · Stanford Report, March 2026 · Stanford HAI, March 2026"
-  },
-  {
-    "objectID": "projects/snail-parasite-id.html",
-    "href": "projects/snail-parasite-id.html",
-    "title": "Snail and parasite identification",
-    "section": "",
-    "text": "Schistosomiasis surveys depend on telling snail species apart, and on spotting the human parasite among the many look-alike larvae that snails release. Both take trained experts, who are scarce in the places that need them.\nI co-developed deep learning models that identify medically important snails and parasite larvae from microscope and field photos taken in Senegal. They performed about as well as experienced parasitologists, and the labeled images were released for others to use.\n\n\n\nI’m now leading a new version with the De Leo lab, adding snails from Côte d’Ivoire and Brazil.\nPapers: Tallam et al. 2021, Frontiers in Public Health\nFigure from Tallam et al. 2021, CC BY."
   }
 ]
