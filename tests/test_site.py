@@ -336,3 +336,10 @@ def test_404_page(site):
     html = page("404.html")
     assert "Page not found" in html
     assert 'href="/"' in html or 'href="/index.html"' in html
+
+
+def test_tire_paper_co_first_marked(site):
+    html = page("publications.html")
+    assert "Co-first authors" in html
+    line = next(l for l in html.splitlines() if "rsase.2026.102011" in l)
+    assert re.search(r"Hassan\*.*Chamberlin</strong>\*", line), line[:300]
