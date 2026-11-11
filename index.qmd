@@ -52,8 +52,8 @@ include-in-header: _includes/jsonld.html
   </a>
   <a class="project-tile" href="projects/indonesia-tire-detection.html">
     <img src="assets/img/indonesia-tire-tile.jpg" alt="Pile of tires outlined in red in a drone image of Makassar, Indonesia" loading="lazy">
-    <h3>Tire detection, Indonesia</h3>
-    <p>Finding discarded tires, where dengue mosquitoes breed, in drone images of a city.</p>
+    <h3>Mosquito breeding sites</h3>
+    <p>Finding discarded tires and trash, where dengue mosquitoes breed, in drone images from Indonesia, Kenya and Costa Rica.</p>
     <p class="credit">Image: Hassan, Chamberlin et al. 2026, CC BY-NC</p>
   </a>
 </section>

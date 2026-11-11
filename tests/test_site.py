@@ -192,3 +192,11 @@ def test_indonesia_tile_credited_on_home(site):
 def test_no_unloaded_webfont():
     for f in (ROOT / "styles").glob("*.scss"):
         assert '"Inter"' not in f.read_text(), f
+
+
+def test_dengue_page_and_tile_name_all_three_countries(site):
+    tile = re.search(r'href="projects/indonesia-tire-detection.html".*?</a>', page("index.html"), re.S).group(0)
+    body = re.search(r"<main.*?</main>", page("projects/indonesia-tire-detection.html"), re.S).group(0)
+    for country in ("Indonesia", "Kenya", "Costa Rica"):
+        assert country in tile, country
+        assert country in body, country

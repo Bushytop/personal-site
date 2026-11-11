@@ -1,7 +1,7 @@
 ---
-title: "Tire detection, Indonesia"
-pagetitle: "Finding mosquito breeding sites from drones, Indonesia"
-description: "Finding discarded tires, where dengue mosquitoes breed, in drone images of Makassar."
+title: "Mosquito breeding sites: Indonesia, Kenya, Costa Rica"
+pagetitle: "Finding mosquito breeding sites from drones: Indonesia, Kenya, Costa Rica"
+description: "Finding discarded tires and trash, where dengue mosquitoes breed, in drone images from Indonesia, Kenya and Costa Rica."
 image: ../assets/img/indonesia-tire-tile.jpg
 image-alt: "Pile of tires outlined in red in a drone image of Makassar, Indonesia"
 date: 2024-01-01
@@ -11,13 +11,15 @@ date: 2024-01-01
 ![](../assets/img/indonesia-tire-tile.jpg){fig-alt="Pile of tires outlined in red in a drone image of Makassar, Indonesia"}
 :::
 
-Discarded tires collect rainwater and are some of the most productive breeding sites for the
-mosquito that spreads dengue. Finding them on foot across a city takes weeks.
+Discarded tires and trash collect rainwater and are some of the most productive breeding sites
+for the mosquito that spreads dengue. Finding them on foot across a town takes weeks.
 
-Working from drone imagery of Makassar, we trained a computer model to find tires
-automatically and mapped where they cluster across neighborhoods. I handle the imagery from raw
-drone photos onward. In Kenya, the same group built a way to spot trash piles and tires in
-drone images and checked it against surveys on foot.
+- **Indonesia:** in Makassar, we trained a computer model to find tires in drone imagery
+  automatically. I handle the imagery from raw drone photos onward.
+- **Kenya:** the same group built a way to spot trash piles and tires in drone images and
+  checked it against surveys on foot.
+- **Costa Rica:** I planned drone flights in two regions and am testing whether the tire model
+  carries over to new towns, and how drone maps scale up to satellite imagery.
 
 ::: {.gallery}
 ![](../assets/img/indonesia-tire-1.jpg){fig-alt="Drone map of Makassar with ground photos of tires and trash sites"}
