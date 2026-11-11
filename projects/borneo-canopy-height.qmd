@@ -7,13 +7,14 @@ image-alt: "Airborne lidar canopy height over Bornean rainforest: tree crowns in
 date: 2025-10-01
 ---
 
-How tall a forest stands tells you how much carbon it holds and where it is being degraded.
-Measuring it usually takes airborne lidar, which is costly and covers only narrow strips.
+Canopy height is a good guide to how much carbon a forest holds and where it is being
+degraded. Measuring it usually takes airborne lidar, which is costly and covers only narrow
+strips.
 
 I led a project that trained a deep learning model on lidar from 85 sites across Indonesian
 Borneo, paired with free satellite and terrain data. The model can predict canopy height at
-30 m across Kalimantan wherever lidar is missing, and it was far more accurate than the
-tree-based methods common in the field.
+30 m across Kalimantan wherever lidar is missing, and it was more accurate than the tree-based
+methods common in the field.
 
 ::: {.gallery}
 ![](../assets/img/borneo-canopy-1.jpg){fig-alt="Lidar canopy height maps of a Borneo forest block at 1 m resolution and resampled to 30 m"}

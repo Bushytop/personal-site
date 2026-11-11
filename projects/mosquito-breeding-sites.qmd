@@ -12,7 +12,7 @@ date: 2024-01-01
 :::
 
 Discarded tires and trash collect rainwater and are some of the most productive breeding sites
-for the mosquito that spreads dengue. Finding them on foot across a town takes weeks.
+for the mosquito that spreads dengue. Finding them on foot is slow and misses many.
 
 - **Indonesia:** I trained the deep learning model that finds tires in drone imagery of
   Makassar, and I take the imagery from raw drone photos to finished maps. I'm now building

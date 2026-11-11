@@ -1,6 +1,6 @@
 ---
 title: "About"
-description: "Andy Chamberlin, research data scientist at Stanford: drone and satellite mapping, computer vision and spatial modeling for disease ecology and agriculture."
+description: "Andy Chamberlin, research data scientist at Stanford: drone and satellite mapping, computer vision and spatial modeling for disease ecology and the environment."
 ---
 
 I'm a research data scientist at Stanford University in Disease Ecology in a Changing World

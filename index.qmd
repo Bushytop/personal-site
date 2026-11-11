@@ -1,6 +1,6 @@
 ---
 pagetitle: "Drone and satellite mapping"
-description: "Andy Chamberlin maps disease-carrying snails and mosquitoes, crops and water with drones and satellites."
+description: "Andy Chamberlin maps disease-carrying snails and mosquitoes, water and forests with drones and satellites."
 image: assets/img/share.jpg
 image-alt: "Aerial view of a river channel in the Senegal River valley"
 page-layout: full
@@ -11,23 +11,23 @@ include-in-header: _includes/jsonld.html
 <header class="hero" style="background-image:url('assets/img/banner.jpg')">
   <div class="hero-text">
     <h1>Andy Chamberlin</h1>
-    <p>Drone and satellite mapping of landscapes, crops and disease risk.</p>
+    <p>Drone and satellite mapping of landscapes and disease risk.</p>
   </div>
 </header>
 
 <section class="intro">
   <p>I'm a research data scientist at Stanford. I map where disease-carrying snails and
-  mosquitoes live, and how crops and water change across a landscape, from drone flights up to
-  satellite imagery. I lead the analysis on each project, from raw imagery to finished maps:
-  calibration, terrain and water-flow modeling, the deep learning models that find tires and
-  outline water plants, and the statistics behind the results. My work spans Senegal, Brazil, Costa Rica, Indonesia and Kenya, and I also
-  shoot and edit photo and video from the field.</p>
+  mosquitoes live, and how water, plants and forests change across a landscape, from drone
+  flights up to satellite imagery. On most projects I lead the analysis from raw imagery to
+  finished maps, including the deep learning models that find tires and outline water plants.
+  My work spans Senegal, Brazil, Costa Rica, Indonesia and Kenya, and I also shoot and edit
+  photo and video from the field.</p>
 </section>
 
 <section class="services">
   <div class="service-card">
     <h3>Drone mapping &amp; spatial analysis</h3>
-    <p>Mosquito and snail habitat, crop health and yield, vegetation and water mapping, terrain and drainage.</p>
+    <p>Mosquito and snail habitat, vegetation and water mapping, crop monitoring, terrain and drainage.</p>
   </div>
   <div class="service-card">
     <h3>Satellite remote sensing &amp; modeling</h3>

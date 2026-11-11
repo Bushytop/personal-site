@@ -13,15 +13,14 @@ date: 2016-08-01
 
 Schistosomiasis spreads through freshwater snails that shelter in water plants. Since 2016 I
 have led drone mapping at village water sites along the lower Senegal River, flying the early
-surveys and later training local partners to fly them. The maps show how much open water and
-how many water plants each site has.
+surveys and later training local partners to fly them. The maps show how much of each site is
+open water and how much is covered by plants.
 
 That plant cover turned out to predict how many children were infected better than counting
 snails did. It now guides where to remove plants and where to look for transmission.
 
-Mapping plants by hand at every site doesn't scale, so I build deep learning models that
-outline open water and floating and rooted plants in each drone map. They start from large
-image models trained elsewhere, so a handful of hand-labeled sites is enough to teach them.
+Mapping plants by hand at every site doesn't scale, so I'm building deep learning models that
+outline open water and floating and rooted plants in each drone map.
 
 **Papers:** [Wood et al. 2019, *PNAS*](https://doi.org/10.1073/pnas.1903698116) ·
 [Chamberlin et al. 2021, *Geospatial Health*](https://doi.org/10.4081/gh.2020.818) ·
