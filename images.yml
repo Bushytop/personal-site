@@ -35,7 +35,8 @@
 - root: tire_paper
   src: fig9.jpg
   out: indonesia-tire-tile.jpg
-  alt: "Tires outlined in red on drone images of Makassar, Indonesia"
+  crop: [822, 48, 1222, 475]
+  alt: "Pile of tires outlined in red in a drone image of Makassar, Indonesia"
 - root: tire_paper
   src: fig3.jpg
   out: indonesia-tire-1.jpg

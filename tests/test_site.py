@@ -142,3 +142,53 @@ def test_media_known_items(site):
 
 def test_contact_page_has_email_hook(site):
     assert re.search(r'<a class="email"[^>]*data-u="hello"', page("contact.html"))
+
+
+def test_titles_name_once(site):
+    for p in _html_files(site):
+        title = re.search(r"<title>(.*?)</title>", p.read_text(), re.S).group(1)
+        assert title.count("Andy Chamberlin") == 1, (p.name, title)
+
+
+def test_home_share_image_and_description(site):
+    html = page("index.html")
+    og = re.search(r'<meta property="og:image" content="([^"]+)"', html).group(1)
+    assert og.endswith("assets/img/share.jpg"), og
+    assert re.search(r'<meta name="description" content="[^"]+"', html)
+
+
+def test_profile_links_match_profile_json():
+    prof = json.loads((ROOT / "_data" / "profile.json").read_text())
+    for f in ("_quarto.yml", "contact.qmd"):
+        text = (ROOT / f).read_text()
+        for k in ("orcid", "scholar", "github", "linkedin"):
+            assert prof[k] in text, (f, k)
+
+
+def test_project_paper_links_have_years(site):
+    for slug in LAUNCH_SLUGS:
+        line = next((l for l in page(f"projects/{slug}.html").splitlines() if "Papers:" in l), "")
+        for a in re.findall(r'<a href="https://doi.org[^"]*">(.*?)</a>', line, re.S):
+            assert re.search(r"\b(19|20)\d\d\b", a), (slug, a)
+
+
+def test_indonesia_links_rosser_lab_papers(site):
+    html = page("projects/indonesia-tire-detection.html")
+    for doi in ("10.1186/s13071-026-07646-0", "10.1186/s13071-025-06706-1",
+                "10.1007/s11356-024-33801-0", "10.1186/s44263-026-00250-5"):
+        assert f"doi.org/{doi}" in html, doi
+
+
+def test_senegal_links_jones_2021(site):
+    assert "doi.org/10.1371/journal.pntd.0009712" in page("projects/senegal-snail-habitat.html")
+
+
+def test_indonesia_tile_credited_on_home(site):
+    html = page("index.html")
+    tile = re.search(r'href="projects/indonesia-tire-detection.html".*?</a>', html, re.S).group(0)
+    assert "CC BY-NC" in tile
+
+
+def test_no_unloaded_webfont():
+    for f in (ROOT / "styles").glob("*.scss"):
+        assert '"Inter"' not in f.read_text(), f

@@ -11,6 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 1.11.9
       - uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages

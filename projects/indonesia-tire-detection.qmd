@@ -1,14 +1,14 @@
 ---
 title: "Tire detection, Indonesia"
-pagetitle: "Finding mosquito breeding sites from drones, Indonesia · Andy Chamberlin"
+pagetitle: "Finding mosquito breeding sites from drones, Indonesia"
 description: "Finding discarded tires, where dengue mosquitoes breed, in drone images of Makassar."
 image: ../assets/img/indonesia-tire-tile.jpg
-image-alt: "Tires outlined in red on drone images of Makassar, Indonesia"
+image-alt: "Pile of tires outlined in red in a drone image of Makassar, Indonesia"
 date: 2024-01-01
 ---
 
 ::: {.gallery}
-![](../assets/img/indonesia-tire-tile.jpg){fig-alt="Tires outlined in red on drone images of Makassar, Indonesia"}
+![](../assets/img/indonesia-tire-tile.jpg){fig-alt="Pile of tires outlined in red in a drone image of Makassar, Indonesia"}
 :::
 
 Discarded tires collect rainwater and are some of the most productive breeding sites for the
@@ -16,13 +16,17 @@ mosquito that spreads dengue. Finding them on foot across a city takes weeks.
 
 Working from drone imagery of Makassar, we trained a computer model to find tires
 automatically and mapped where they cluster across neighborhoods. I handle the imagery from raw
-drone photos onward. The same approach is being tested on trash sites in Kenya.
+drone photos onward. In Kenya, the same group built a way to spot trash piles and tires in
+drone images and checked it against surveys on foot.
 
 ::: {.gallery}
 ![](../assets/img/indonesia-tire-1.jpg){fig-alt="Drone map of Makassar with ground photos of tires and trash sites"}
 :::
 
 **Papers:** [Hassan, Chamberlin et al. 2026, *Remote Sensing Applications: Society and Environment*](https://doi.org/10.1016/j.rsase.2026.102011) ·
-[Woo et al. 2026, *Parasites & Vectors*](https://doi.org/10.1186/s13071-026-07646-0)
+[Woo et al. 2026, *Parasites & Vectors*](https://doi.org/10.1186/s13071-026-07646-0) ·
+[Tarpenning et al. 2025, *Parasites & Vectors*](https://doi.org/10.1186/s13071-025-06706-1) ·
+[Rosser et al. 2024, *Environmental Science and Pollution Research*](https://doi.org/10.1007/s11356-024-33801-0) ·
+[Bramante et al. 2026, *BMC Global and Public Health*](https://doi.org/10.1186/s44263-026-00250-5)
 
 Figures from Hassan, Chamberlin et al. 2026, CC BY-NC.

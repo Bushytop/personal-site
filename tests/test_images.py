@@ -74,3 +74,11 @@ def test_manifest_unknown_root_fails_loudly(tmp_path):
     m.write_text("- root: nowhere\n  src: a.jpg\n  out: a.jpg\n  alt: x\n")
     with pytest.raises(KeyError, match="nowhere"):
         pi.build_from_manifest(m, tmp_path / "out", roots={})
+
+
+def test_manifest_crop_box(tmp_path):
+    _jpeg(tmp_path / "a.jpg", size=(1000, 800))
+    m = tmp_path / "images.yml"
+    m.write_text(f"- src: {tmp_path / 'a.jpg'}\n  out: a.jpg\n  alt: x\n  crop: [100, 50, 500, 350]\n")
+    (out,) = pi.build_from_manifest(m, tmp_path / "out")
+    assert Image.open(out).size == (400, 300)

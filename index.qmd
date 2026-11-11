@@ -1,5 +1,8 @@
 ---
-pagetitle: "Andy Chamberlin · Drone and satellite mapping"
+pagetitle: "Drone and satellite mapping"
+description: "Andy Chamberlin maps disease-carrying snails and mosquitoes, crops and water with drones and satellites."
+image: assets/img/share.jpg
+image-alt: "Aerial view of a river channel in the Senegal River valley"
 page-layout: full
 include-in-header: _includes/jsonld.html
 ---
@@ -48,9 +51,10 @@ include-in-header: _includes/jsonld.html
     <p>Drone surveys of ponds and streams where schistosomiasis is spread.</p>
   </a>
   <a class="project-tile" href="projects/indonesia-tire-detection.html">
-    <img src="assets/img/indonesia-tire-tile.jpg" alt="Tires outlined in red on drone images of Makassar, Indonesia" loading="lazy">
+    <img src="assets/img/indonesia-tire-tile.jpg" alt="Pile of tires outlined in red in a drone image of Makassar, Indonesia" loading="lazy">
     <h3>Tire detection, Indonesia</h3>
     <p>Finding discarded tires, where dengue mosquitoes breed, in drone images of a city.</p>
+    <p class="credit">Image: Hassan, Chamberlin et al. 2026, CC BY-NC</p>
   </a>
 </section>
 

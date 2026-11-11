@@ -1,6 +1,6 @@
 ---
 title: "Snail habitat, Brazil"
-pagetitle: "Snail habitat mapping, Brazil · Andy Chamberlin"
+pagetitle: "Snail habitat mapping, Brazil"
 description: "Drone surveys and national maps of schistosomiasis snail habitat in Brazil."
 image: ../assets/img/brazil-snail-tile.jpg
 image-alt: "Pond in green hill pasture in southeastern Brazil, seen from a drone"

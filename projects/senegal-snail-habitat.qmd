@@ -1,6 +1,6 @@
 ---
 title: "Snail habitat, Senegal"
-pagetitle: "Snail habitat mapping, Senegal · Andy Chamberlin"
+pagetitle: "Snail habitat mapping, Senegal"
 description: "Drone mapping of water plants that harbor schistosomiasis snails along the Senegal River."
 image: ../assets/img/senegal-snail-tile.jpg
 image-alt: "Pond edged with dense water plants near a village in northern Senegal"
@@ -20,7 +20,8 @@ That plant cover turned out to predict how many children were infected better th
 snails did. It now guides where to remove plants and where to look for transmission.
 
 **Papers:** [Wood et al. 2019, *PNAS*](https://doi.org/10.1073/pnas.1903698116) ·
-[Chamberlin et al., *Geospatial Health*](https://doi.org/10.4081/gh.2020.818) ·
+[Chamberlin et al. 2021, *Geospatial Health*](https://doi.org/10.4081/gh.2020.818) ·
+[Jones et al. 2021, *PLOS NTD*](https://doi.org/10.1371/journal.pntd.0009712) ·
 [Liu et al. 2022, *Remote Sensing*](https://doi.org/10.3390/rs14061345)
 
 **News:** [Stanford Report, March 2026](https://news.stanford.edu/stories/2026/03/ai-platform-disease-mapping-schistosomiasis-research)

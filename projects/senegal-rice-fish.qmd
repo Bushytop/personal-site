@@ -1,6 +1,6 @@
 ---
 title: "Rice and fish, Senegal"
-pagetitle: "Rice yield from drones, Senegal · Andy Chamberlin"
+pagetitle: "Rice yield from drones, Senegal"
 description: "Estimating rice yield from drone and satellite imagery in Senegal fields stocked with fish."
 image: ../assets/img/senegal-rice-tile.jpg
 image-alt: "Irrigated fields along a channel in the Senegal River valley at sunrise"

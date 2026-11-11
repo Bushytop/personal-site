@@ -26,3 +26,14 @@ def test_no_absolute_local_paths_in_repo():
         text = p.read_text(errors="ignore")
         for bad in ("/home/" + "andy", "/mnt/" + "idrive", "/mnt/" + "datasets2"):
             assert bad not in text, (p, bad)
+
+
+def test_publish_workflow_pins_quarto():
+    wf = (ROOT / ".github" / "workflows" / "publish.yml").read_text()
+    assert "version: 1.11.9" in wf
+
+
+def test_costa_rica_note_lists_publish_steps():
+    note = (ROOT / "projects" / "_costa-rica-dengue.qmd").read_text()
+    for step in ("draft: true", "tile", "index.qmd"):
+        assert step in note, step

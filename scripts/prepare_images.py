@@ -2,7 +2,8 @@
 """Turn curated source photos into web images for the site.
 
 Inputs:  images.yml at the repo root, a list of {root: name, src: path under that root,
-         out: name.jpg, alt: text}; image_roots.yml (gitignored) maps each root name to a local
+         out: name.jpg, alt: text,
+         optional crop: [left, top, right, bottom]}; image_roots.yml (gitignored) maps each root name to a local
          folder, so no local paths land in this public repo
 Outputs: assets/img/<out>, long edge <= 2000 px, JPEG quality 82, no EXIF/XMP
 
@@ -18,10 +19,16 @@ from PIL import Image, ImageOps
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def prepare(src: Path, dst: Path, long_edge: int = 2000, quality: int = 82) -> None:
-    """Write src to dst as an upright, metadata-free JPEG no larger than long_edge px."""
+def prepare(src: Path, dst: Path, long_edge: int = 2000, quality: int = 82,
+            crop: list[int] | None = None) -> None:
+    """Write src to dst as an upright, metadata-free JPEG no larger than long_edge px.
+
+    crop is an optional [left, top, right, bottom] box in source pixels, applied before resizing.
+    """
     with Image.open(src) as img:
         img = ImageOps.exif_transpose(img).convert("RGB")
+        if crop:
+            img = img.crop(tuple(crop))
         img.thumbnail((long_edge, long_edge), Image.LANCZOS)
         clean = Image.new("RGB", img.size)
         clean.paste(img)
@@ -56,7 +63,7 @@ def build_from_manifest(manifest: Path, out_dir: Path, roots: dict | None = None
     outs = []
     for e, src in zip(entries, sources):
         dst = out_dir / e["out"]
-        prepare(src, dst)
+        prepare(src, dst, crop=e.get("crop"))
         outs.append(dst)
     return outs
 
