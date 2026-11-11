@@ -1,6 +1,6 @@
 ---
 title: "Terms of use"
-description: "Terms for this site, my map apps and my Google API client."
+description: "Terms for this site and my map apps."
 ---
 
 *Last updated November 11, 2026.*
@@ -10,8 +10,5 @@ under their CC BY licenses, credited on each page.
 
 The site and the map apps are provided as is, without warranty. The maps are research outputs;
 don't use them for navigation, legal or medical decisions.
-
-The Google API client described on the [privacy page](/privacy.html) is for my personal use.
-No one else is authorized to use it.
 
 Questions: see the [contact page](/contact.html).
