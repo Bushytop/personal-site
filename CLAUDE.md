@@ -16,3 +16,14 @@ and `...-plan.md`. Read the design before changing content.
   Manifest paths are relative to named roots in the gitignored `image_roots.yml`.
 - Copy: Andy's voice, plain words, no jargon on project pages (tests enforce a word list).
 - Run `pytest -q` before every push.
+- Images: no Maxar/DigitalGlobe imagery (grant terms; a test enforces it). Paper figures only
+  from CC BY papers, credited on the page. Code links only to public repos Andy owns or mainly
+  develops (a test holds the allowlist in `CODE_LINKS`).
+- Credit framing: "I lead/trained" for Andy's role, "our" for team products.
+
+## Adding an Earth Engine app
+Apps come from the `gee-inventory` work. For each public app: link it from the project page it
+belongs to (`**App:** [name](url)`), and add a screenshot through `images.yml`. Once two or more
+are live, add an "Interactive maps" listing group to `projects/index.qmd`; once there are
+several, consider an "Apps" navbar item. Only apps that open without sign-in, showing published
+or cleared products (De Leo cleared the Kalimantan canopy height map, 2026-11-11).
