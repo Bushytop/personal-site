@@ -3,7 +3,7 @@ title: "Snail habitat from space, Senegal River basin"
 pagetitle: "Mapping snail habitat from satellites, Senegal River basin"
 description: "Deep learning on satellite images to map the water plants where schistosomiasis snails live, across the Senegal River basin."
 image: ../assets/img/senegal-satellite-tile.jpg
-image-alt: "Satellite image of a lake shore in Senegal colored by the model: floating plants red, rooted plants green, open water blue"
+image-alt: "River channel in the Senegal River valley with patches of floating plants, seen from a drone"
 date: 2022-03-01
 ---
 
@@ -18,7 +18,7 @@ labeled the training maps and led the drone mapping behind them. The approach gr
 platform for mapping schistosomiasis risk from space.
 
 ::: {.gallery}
-![](../assets/img/senegal-satellite-1.jpg){fig-alt="Two satellite images of the Senegal River basin and the model's maps of floating plants, rooted plants, water and land"}
+![](../assets/img/senegal-satellite-1.jpg){fig-alt="Wide drone view over the Senegal River valley: channels, wetlands and farm fields to the horizon"}
 :::
 
 **Papers:** [Liu et al. 2022, *Remote Sensing*](https://doi.org/10.3390/rs14061345)
@@ -26,5 +26,3 @@ platform for mapping schistosomiasis risk from space.
 **News:** [Stanford HAI, March 2020](https://hai.stanford.edu/news/bringing-ai-neglected-tropical-disease) ·
 [Stanford Report, March 2026](https://news.stanford.edu/stories/2026/03/ai-platform-disease-mapping-schistosomiasis-research) ·
 [Stanford HAI, March 2026](https://hai.stanford.edu/news/how-a-hai-seed-grant-helped-launch-a-disease-fighting-ai-platform)
-
-Figure from Liu et al. 2022, CC BY; satellite imagery © Maxar Technologies.

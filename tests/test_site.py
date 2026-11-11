@@ -278,7 +278,28 @@ def test_senegal_satellite_page(site):
     body = re.search(r"<main.*?</main>", page("projects/senegal-satellite-habitat.html"), re.S).group(0)
     assert "doi.org/10.3390/rs14061345" in body
     assert "hai.stanford.edu/news/bringing-ai-neglected-tropical-disease" in body
-    assert "Maxar" in body
+    assert "Maxar" not in body
+
+
+def test_no_maxar_imagery_anywhere(site):
+    for p in _html_files(site):
+        assert "Maxar" not in p.read_text(), p.name
+
+
+def test_projects_page_grouped(site):
+    html = page("projects/index.html")
+    heads = ["Drone mapping", "Satellite mapping", "Image identification"]
+    pos = [html.find(h) for h in heads]
+    assert all(x >= 0 for x in pos) and pos == sorted(pos), pos
+    groups = {0: ["senegal-snail-habitat", "senegal-rice-fish", "brazil-snail-habitat",
+                  "mosquito-breeding-sites"],
+              1: ["borneo-canopy-height", "senegal-satellite-habitat"],
+              2: ["snail-parasite-id"]}
+    bounds = pos + [len(html)]
+    for g, slugs in groups.items():
+        sec = html[bounds[g]:bounds[g + 1]]
+        for s in slugs:
+            assert f"{s}.html" in sec, (g, s)
 
 
 def test_snail_id_says_co_developed(site):
