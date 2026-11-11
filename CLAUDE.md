@@ -27,3 +27,8 @@ belongs to (`**App:** [name](url)`), and add a screenshot through `images.yml`. 
 are live, add an "Interactive maps" listing group to `projects/index.qmd`; once there are
 several, consider an "Apps" navbar item. Only apps that open without sign-in, showing published
 or cleared products (De Leo cleared the Kalimantan canopy height map, 2026-11-11).
+
+## Publishing
+- Push to `main`; the `Publish site` workflow renders and pushes `gh-pages`. Repo:
+  github.com/Bushytop/personal-site (public since 2026-11-11).
+- Commits here use the GitHub no-reply address (set in this repo's git config); keep it that way.
