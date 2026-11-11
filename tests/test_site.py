@@ -272,3 +272,16 @@ def test_snail_id_page(site):
     assert "Tallam et al. 2021" in body
     assert "Côte d’Ivoire" in body or "Côte d'Ivoire" in body
     assert "github.com" not in body
+
+
+def test_senegal_satellite_page(site):
+    body = re.search(r"<main.*?</main>", page("projects/senegal-satellite-habitat.html"), re.S).group(0)
+    assert "doi.org/10.3390/rs14061345" in body
+    assert "hai.stanford.edu/news/bringing-ai-neglected-tropical-disease" in body
+    assert "Maxar" in body
+
+
+def test_snail_id_says_co_developed(site):
+    body = re.search(r"<main.*?</main>", page("projects/snail-parasite-id.html"), re.S).group(0)
+    assert "I co-developed" in body
+    assert "Zac Liu" not in body

@@ -11,7 +11,7 @@ Schistosomiasis surveys depend on telling snail species apart, and on spotting t
 parasite among the many look-alike larvae that snails release. Both take trained experts,
 who are scarce in the places that need them.
 
-With Zac Liu, I co-developed deep learning models that identify medically important snails and
+I co-developed deep learning models that identify medically important snails and
 parasite larvae from microscope and field photos taken in Senegal. They performed about as well
 as experienced parasitologists, and the labeled images were released for others to use.
 

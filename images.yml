@@ -60,3 +60,12 @@
   src: fig2-000.jpg
   out: snail-id-1.jpg
   alt: "Example photos of four snail groups and eleven kinds of parasite larvae from the training images"
+- root: liu_paper
+  src: f-011.jpg
+  out: senegal-satellite-tile.jpg
+  crop: [583, 655, 1135, 1137]
+  alt: "Satellite image of a lake shore in Senegal colored by the model: floating plants red, rooted plants green, open water blue"
+- root: liu_paper
+  src: f-011.jpg
+  out: senegal-satellite-1.jpg
+  alt: "Two satellite images of the Senegal River basin and the model's maps of floating plants, rooted plants, water and land"
