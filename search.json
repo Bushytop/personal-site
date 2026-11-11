@@ -4,7 +4,7 @@
     "href": "terms.html",
     "title": "Terms of use",
     "section": "",
-    "text": "Last updated November 11, 2026.\nText and images on this site are mine unless credited otherwise. Figures from papers are reused under their CC BY licenses, credited on each page.\nThe site and the map apps are provided as is, without warranty. The maps are research outputs; don’t use them for navigation, legal or medical decisions.\nThe Google API client described on the privacy page is for my personal use. No one else is authorized to use it.\nQuestions: see the contact page."
+    "text": "Last updated November 11, 2026.\nText and images on this site are mine unless credited otherwise. Figures from papers are reused under their CC BY licenses, credited on each page.\nThe site and the map apps are provided as is, without warranty. The maps are research outputs; don’t use them for navigation, legal or medical decisions.\nQuestions: see the contact page."
   },
   {
     "objectID": "projects/snail-parasite-id.html",
@@ -56,11 +56,11 @@
     "text": "Map apps\nThe Earth Engine map apps linked from my project pages open without sign-in and collect nothing about you. Google runs them under its privacy policy."
   },
   {
-    "objectID": "privacy.html#google-api-client",
-    "href": "privacy.html#google-api-client",
+    "objectID": "privacy.html#google-sign-in",
+    "href": "privacy.html#google-sign-in",
     "title": "Privacy",
-    "section": "Google API client",
-    "text": "Google API client\nI run a Google OAuth client, “rclone-yggdrasil”, for my own use only: it backs up files from my workstation to my own Google Drive. It is not offered to anyone else. It reads and writes only the Drive of the account that signs in to it, which is mine. That data moves only between my computer and my Drive; it is not shared, sold, or used to train AI models.\nUse of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements.\nQuestions: see the contact page."
+    "section": "Google sign-in",
+    "text": "Google sign-in\nNone of my public pages or apps ask you to sign in. Any tool of mine that uses Google sign-in is for my own account only, and its use of data from Google APIs follows the Google API Services User Data Policy, including the Limited Use requirements.\nQuestions: see the contact page."
   },
   {
     "objectID": "index.html",
