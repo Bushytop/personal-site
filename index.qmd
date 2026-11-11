@@ -68,8 +68,9 @@ include-in-header: _includes/jsonld.html
   <h2 class="section-head">In the media</h2>
   <ul>
     <li><a href="https://www.npr.org/2026/07/12/nx-s1-5803170/farmers-fish-rice-snails-tropical-disease">NPR, July 2026: A promising tale from Senegal of fish, rice … and dangerous worms</a></li>
+    <li><a href="https://news.stanford.edu/stories/2026/04/mosquito-borne-disease-breeding-sites-drones-ai">Stanford Report, April 2026: Drones and AI take flight to combat mosquito-borne disease</a></li>
     <li><a href="https://news.stanford.edu/stories/2026/03/ai-platform-disease-mapping-schistosomiasis-research">Stanford Report, March 2026: AI platform maps disease risk from space</a></li>
-    <li><a href="https://news.stanford.edu/stories/2026/01/schistosomiasis-river-fever-transmission-research">Stanford Report, January 2026: Researchers work to outrun the risk of ‘river fever’</a></li>
+    <li><a href="https://hai.stanford.edu/news/bringing-ai-neglected-tropical-disease">Stanford HAI, March 2020: Bringing AI to a Neglected Tropical Disease</a></li>
   </ul>
   <p><a href="media.html">All media →</a></p>
 </section>

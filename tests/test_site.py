@@ -243,3 +243,10 @@ def test_about_page(site):
     for s in ("technical lead", "De Leo", "Rosser", "Mordecai", "Bayesian", "Part 107"):
         assert s in body, s
     assert 'href="./about.html"' in page("index.html") or 'href="about.html"' in page("index.html")
+
+
+def test_home_media_highlights(site):
+    sec = re.search(r'class="media-highlights.*?</section>', page("index.html"), re.S).group(0)
+    assert "hai.stanford.edu/news/bringing-ai-neglected-tropical-disease" in sec
+    assert "news.stanford.edu/stories/2026/04/mosquito-borne-disease-breeding-sites-drones-ai" in sec
+    assert "river-fever" not in sec
