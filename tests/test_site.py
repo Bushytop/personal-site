@@ -50,7 +50,7 @@ def test_cname(site):
     assert (site / "CNAME").read_text().strip() == "andychamberlin.com"
 
 
-LAUNCH_SLUGS = ["senegal-snail-habitat", "senegal-rice-fish", "brazil-snail-habitat",
+LAUNCH_SLUGS = ["senegal-snail-habitat", "senegal-rice-fish", "borneo-canopy-height",
                 "mosquito-breeding-sites"]
 
 
@@ -113,7 +113,7 @@ JARGON = ["segmentation", "phenotyping", "RADIO", "SAM", "LOSO", "U-Net", "found
 
 
 def test_no_jargon_on_project_pages(site):
-    for slug in LAUNCH_SLUGS:
+    for slug in LAUNCH_SLUGS + ["brazil-snail-habitat"]:
         html = page(f"projects/{slug}.html")
         body = re.search(r"<main.*?</main>", html, re.S).group(0)
         text = re.sub(r"<[^>]+>", " ", body)
@@ -175,7 +175,7 @@ def test_profile_links_match_profile_json():
 
 
 def test_project_paper_links_have_years(site):
-    for slug in LAUNCH_SLUGS:
+    for slug in LAUNCH_SLUGS + ["brazil-snail-habitat"]:
         line = next((l for l in page(f"projects/{slug}.html").splitlines() if "Papers:" in l), "")
         for a in re.findall(r'<a href="https://doi.org[^"]*">(.*?)</a>', line, re.S):
             assert re.search(r"\b(19|20)\d\d\b", a), (slug, a)
@@ -250,3 +250,17 @@ def test_home_media_highlights(site):
     assert "hai.stanford.edu/news/bringing-ai-neglected-tropical-disease" in sec
     assert "news.stanford.edu/stories/2026/04/mosquito-borne-disease-breeding-sites-drones-ai" in sec
     assert "river-fever" not in sec
+
+
+def test_canopy_page(site):
+    html = page("projects/borneo-canopy-height.html")
+    assert "doi.org/10.3390/rs17213592" in html
+    assert "doi.org/10.1016/j.lanplh.2026.101455" in html
+    assert "CC BY" in html
+
+
+def test_home_tiles_canopy_not_brazil(site):
+    html = page("index.html")
+    assert 'href="projects/borneo-canopy-height.html"' in html
+    assert 'href="projects/brazil-snail-habitat.html"' not in html
+    assert "brazil-snail-habitat.html" in page("projects/index.html")

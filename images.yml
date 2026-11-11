@@ -41,3 +41,13 @@
   src: fig3.jpg
   out: indonesia-tire-1.jpg
   alt: "Drone map of Makassar with ground photos of tires and trash sites"
+- root: chm_paper
+  src: p8-08.jpg
+  out: borneo-canopy-tile.jpg
+  crop: [985, 2700, 1900, 3160]
+  alt: "Airborne lidar canopy height over Bornean rainforest: tree crowns in gray, a river in black"
+- root: chm_paper
+  src: p8-08.jpg
+  out: borneo-canopy-1.jpg
+  crop: [937, 1094, 2967, 3248]
+  alt: "Lidar canopy height maps of a Borneo forest block at 1 m resolution and resampled to 30 m"

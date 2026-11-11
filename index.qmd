@@ -51,10 +51,11 @@ include-in-header: _includes/jsonld.html
     <h3>Rice and fish, Senegal</h3>
     <p>Estimating rice yield from drone and satellite imagery in fields stocked with fish.</p>
   </a>
-  <a class="project-tile" href="projects/brazil-snail-habitat.html">
-    <img src="assets/img/brazil-snail-tile.jpg" alt="Pond in green hill pasture in southeastern Brazil, seen from a drone" loading="lazy">
-    <h3>Snail habitat, Brazil</h3>
-    <p>Drone surveys of ponds and streams where schistosomiasis is spread.</p>
+  <a class="project-tile" href="projects/borneo-canopy-height.html">
+    <img src="assets/img/borneo-canopy-tile.jpg" alt="Airborne lidar canopy height over Bornean rainforest: tree crowns in gray, a river in black" loading="lazy">
+    <h3>Forest canopy height, Borneo</h3>
+    <p>Predicting rainforest height across Indonesian Borneo from free satellite data.</p>
+    <p class="credit">Image: Chamberlin et al. 2025, CC BY</p>
   </a>
   <a class="project-tile" href="projects/mosquito-breeding-sites.html">
     <img src="assets/img/indonesia-tire-tile.jpg" alt="Pile of tires outlined in red in a drone image of Makassar, Indonesia" loading="lazy">
