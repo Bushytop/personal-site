@@ -1,0 +1,44 @@
+---
+title: "About"
+description: "Andy Chamberlin, research data scientist at Stanford: drone and satellite mapping, computer vision and spatial modeling for disease ecology and agriculture."
+---
+
+I'm a research data scientist at Stanford, working with the research groups of Giulio De Leo,
+Joelle Rosser and Erin Mordecai on schistosomiasis, dengue and the landscapes behind them. On
+most of these projects I'm the technical lead for the drone and remote sensing side.
+
+## What I do
+
+I work across the whole arc of a project:
+
+- Shaping the questions and writing the grants
+- Designing studies and planning drone missions
+- Processing and calibrating drone and satellite imagery
+- Building computer vision models that pull features out of that imagery
+- Analysis and modeling
+- Presentations and papers
+
+## Methods
+
+- **Imagery:** drone mapping, multispectral and spectral analysis, radiometric calibration,
+  satellite imagery and Google Earth Engine
+- **Terrain and water:** elevation models, hydrological modeling and flow routing
+- **Computer vision:** deep learning to detect objects and map land cover, testing models in new
+  places, scaling drone results up to satellite
+- **Statistics:** spatial statistics, machine learning, Bayesian inference, species distribution
+  models
+- **Tools:** Python, R, QGIS, GPU model training on Stanford's computing cluster
+
+## With others
+
+None of this is solo work. It rests on the field teams, labs and partners in Senegal, Brazil,
+Kenya, Indonesia and Costa Rica, and on the scientists who lead these projects.
+
+## Background
+
+- B.S., Biology, University of Wisconsin–Madison
+- FAA Part 107 remote pilot; private pilot license
+- Consultant to Conservation International, mapping water-management infrastructure in
+  sub-Saharan Africa (2019–2020)
+- French and Spanish
+- Field photography and video

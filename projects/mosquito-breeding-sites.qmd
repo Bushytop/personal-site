@@ -20,7 +20,7 @@ for the mosquito that spreads dengue. Finding them on foot across a town takes w
 - **Kenya:** the same group built a way to spot trash piles and tires in drone images and
   checked it against surveys on foot.
 - **Costa Rica:** I planned drone flights in two regions and lead the analysis: testing whether
-  my tire model works in towns it was never trained on, and scaling drone maps up to satellite
+  our tire model works in towns it was never trained on, and scaling drone maps up to satellite
   imagery.
 
 ::: {.gallery}

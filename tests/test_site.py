@@ -221,3 +221,17 @@ def test_makassar_model_credited_to_me(site):
 def test_intro_says_i_lead_the_analysis(site):
     intro = re.search(r'class="intro.*?</section>', page("index.html"), re.S).group(0)
     assert "I lead the analysis" in intro
+
+
+def test_tire_model_is_ours(site):
+    html = page("projects/mosquito-breeding-sites.html")
+    assert "our tire model" in html
+    assert "my tire model" not in html
+
+
+def test_about_page(site):
+    html = page("about.html")
+    body = re.search(r"<main.*?</main>", html, re.S).group(0)
+    for s in ("technical lead", "De Leo", "Rosser", "Mordecai", "Bayesian", "Part 107"):
+        assert s in body, s
+    assert 'href="./about.html"' in page("index.html") or 'href="about.html"' in page("index.html")
