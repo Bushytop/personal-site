@@ -125,8 +125,16 @@ MEDIA_URLS = [
     "https://www.npr.org/2026/07/12/nx-s1-5803170/farmers-fish-rice-snails-tropical-disease",
     "https://news.stanford.edu/stories/2026/03/ai-platform-disease-mapping-schistosomiasis-research",
     "https://news.stanford.edu/stories/2026/01/schistosomiasis-river-fever-transmission-research",
-    "https://www.montereybayfisheriestrust.org/future-of-blue/trends-report",
+    "https://hai.stanford.edu/news/how-a-hai-seed-grant-helped-launch-a-disease-fighting-ai-platform",
+    "https://hai.stanford.edu/news/bringing-ai-neglected-tropical-disease",
+    "https://woods.stanford.edu/news/satellites-and-drones-could-help-slow-tropical-disease",
+    "https://stanfordmag.org/contents/just-add-prawns",
+    "https://www.nsf.gov/news/eliminating-public-health-scourge-can-also-benefit",
 ]
+
+
+def test_media_drops_fisheries_report(site):
+    assert "montereybayfisheriestrust" not in page("media.html")
 
 
 def test_media_order_newest_first(site):

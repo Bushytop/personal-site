@@ -1,15 +1,26 @@
 ---
 title: "Media"
-description: "News coverage and films featuring my drone mapping and imagery."
+description: "News coverage of the drone mapping, remote sensing and disease ecology projects I work on."
 ---
 
-Coverage that quotes me or uses my imagery, newest first. Headlines as published.
+Coverage of projects and papers I've worked on, newest first. Headlines as published.
 
 <ul class="media-list">
-<li>2026-09 · Monterey Bay Fisheries Trust · <a href="https://www.montereybayfisheriestrust.org/future-of-blue/trends-report">Monterey Bay Commercial Fisheries: Status &amp; Trends Report</a></li>
+<li>2026-07 · Stanford Global Health · <a href="https://globalhealth.stanford.edu/research/harnessing-ai-and-drones-to-combat-mosquito-borne-disease-in-a-changing-climate.html/">Harnessing AI and drones to combat mosquito-borne disease in a changing climate</a></li>
+<li>2026-07 · Stanford Woods Institute · <a href="https://woods.stanford.edu/news/community-led-health-and-livelihood-programs-helped-protect-rainforests-during-pandemic">Community-led health and livelihood programs helped protect rainforests during the pandemic</a></li>
 <li>2026-07 · NPR · <a href="https://www.npr.org/2026/07/12/nx-s1-5803170/farmers-fish-rice-snails-tropical-disease">A promising tale from Senegal of fish, rice … and dangerous worms</a></li>
 <li>2026-04 · Stanford Report · <a href="https://news.stanford.edu/stories/2026/04/mosquito-borne-disease-breeding-sites-drones-ai">Drones and AI take flight to combat mosquito-borne disease</a></li>
 <li>2026-03 · Stanford Report · <a href="https://news.stanford.edu/stories/2026/03/ai-platform-disease-mapping-schistosomiasis-research">AI platform maps disease risk from space</a></li>
+<li>2026-03 · Stanford HAI · <a href="https://hai.stanford.edu/news/how-a-hai-seed-grant-helped-launch-a-disease-fighting-ai-platform">How a HAI Seed Grant Helped Launch a Disease-Fighting AI Platform</a></li>
 <li>2026-01 · Stanford Report · <a href="https://news.stanford.edu/stories/2026/01/schistosomiasis-river-fever-transmission-research">Researchers work to outrun the risk of ‘river fever’</a></li>
+<li>2025-09 · PLOS (EurekAlert!) · <a href="https://www.eurekalert.org/news-releases/1097279">Reintroducing native African catfish into Lake Victoria reduced snail hosts and lowered schistosomiasis infection intensity in primary-school-aged children</a></li>
+<li>2025-06 · Frontiers for Young Minds · <a href="https://kids.frontiersin.org/articles/10.3389/frym.2025.1560703">How Removing Overgrown Water Plants Can Help Kids Stay Healthy and Improve The Planet</a></li>
+<li>2024-08 · Stanford Report · <a href="https://news.stanford.edu/stories/2024/08/forecasting-climate-s-impact-on-a-debilitating-disease">Forecasting climate’s impact on a debilitating disease</a></li>
+<li>2024-06 · Stanford Global Health · <a href="https://globalhealth.stanford.edu/planetary-health/tracking-trash-and-the-risk-of-mosquito-borne-disease-with-drones.html/">Tracking trash and the risk of mosquito-borne disease with drones</a></li>
+<li>2023-08 · National Science Foundation · <a href="https://www.nsf.gov/news/eliminating-public-health-scourge-can-also-benefit">Eliminating public health scourge can also benefit agriculture</a></li>
+<li>2023-05 · Stanford Magazine · <a href="https://stanfordmag.org/contents/just-add-prawns">Just Add Prawns</a></li>
+<li>2020-10 · Stanford Global Health · <a href="https://globalhealth.stanford.edu/planetary-health/accessible-healthcare-could-be-key-to-solving-climate-crisis.html">Accessible Healthcare Could Be Key to Solving Climate Crisis</a></li>
+<li>2020-03 · Stanford HAI · <a href="https://hai.stanford.edu/news/bringing-ai-neglected-tropical-disease">Bringing AI to a Neglected Tropical Disease</a></li>
+<li>2019-10 · Stanford Woods Institute · <a href="https://woods.stanford.edu/news/satellites-and-drones-could-help-slow-tropical-disease">Satellites and Drones Could Help Slow Tropical Disease</a></li>
 <li>2019-03 · bioGraphic (California Academy of Sciences) · <a href="https://www.biographic.com/protected-by-prawns/">Protected by Prawns</a></li>
 </ul>
