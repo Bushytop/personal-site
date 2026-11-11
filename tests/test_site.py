@@ -264,3 +264,11 @@ def test_home_tiles_canopy_not_brazil(site):
     assert 'href="projects/borneo-canopy-height.html"' in html
     assert 'href="projects/brazil-snail-habitat.html"' not in html
     assert "brazil-snail-habitat.html" in page("projects/index.html")
+
+
+def test_snail_id_page(site):
+    body = re.search(r"<main.*?</main>", page("projects/snail-parasite-id.html"), re.S).group(0).replace("&nbsp;", " ")
+    assert "doi.org/10.3389/fpubh.2021.642895" in body
+    assert "Tallam et al. 2021" in body
+    assert "Côte d’Ivoire" in body or "Côte d'Ivoire" in body
+    assert "github.com" not in body

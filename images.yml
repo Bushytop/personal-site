@@ -51,3 +51,12 @@
   out: borneo-canopy-1.jpg
   crop: [937, 1094, 2967, 3248]
   alt: "Lidar canopy height maps of a Borneo forest block at 1 m resolution and resampled to 30 m"
+- root: snail_paper
+  src: fig2-000.jpg
+  out: snail-id-tile.jpg
+  crop: [0, 0, 425, 400]
+  alt: "Close-up photos of freshwater snail shells used to train the identification model"
+- root: snail_paper
+  src: fig2-000.jpg
+  out: snail-id-1.jpg
+  alt: "Example photos of four snail groups and eleven kinds of parasite larvae from the training images"
