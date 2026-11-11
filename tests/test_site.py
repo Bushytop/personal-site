@@ -323,3 +323,16 @@ def test_project_code_links(site):
         body = re.search(r"<main.*?</main>", p.read_text(), re.S)
         for url in re.findall(r'href="(https://github\.com/[^"]+)"', body.group(0) if body else ""):
             assert url.rstrip("/") in allowed, (p.name, url)
+
+
+def test_favicon_linked(site):
+    html = page("index.html")
+    m = re.search(r'<link href="([^"]+)" rel="icon"', html)
+    assert m, "no favicon link"
+    assert (site / m.group(1).lstrip("./")).exists()
+
+
+def test_404_page(site):
+    html = page("404.html")
+    assert "Page not found" in html
+    assert 'href="/"' in html or 'href="/index.html"' in html

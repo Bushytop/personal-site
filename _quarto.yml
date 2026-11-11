@@ -12,6 +12,7 @@ website:
   site-url: https://andychamberlin.com
   description: "Drone and satellite mapping of landscapes, crops and disease risk."
   image: assets/img/share.jpg
+  favicon: assets/favicon.svg
   open-graph: true
   navbar:
     left:
