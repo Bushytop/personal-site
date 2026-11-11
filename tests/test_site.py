@@ -307,3 +307,19 @@ def test_snail_id_says_co_developed(site):
     body = re.search(r"<main.*?</main>", page("projects/snail-parasite-id.html"), re.S).group(0)
     assert "I co-developed" in body
     assert "Zac Liu" not in body
+
+
+CODE_LINKS = {
+    "mosquito-breeding-sites": "https://github.com/Rosser-Lab/Aedes-Tire-Detection",
+    "borneo-canopy-height": "https://github.com/Bushytop/canopy_height_ml",
+}
+
+
+def test_project_code_links(site):
+    for slug, url in CODE_LINKS.items():
+        assert url in page(f"projects/{slug}.html"), slug
+    allowed = set(CODE_LINKS.values()) | {"https://github.com/Bushytop"}
+    for p in _html_files(site):
+        body = re.search(r"<main.*?</main>", p.read_text(), re.S)
+        for url in re.findall(r'href="(https://github\.com/[^"]+)"', body.group(0) if body else ""):
+            assert url.rstrip("/") in allowed, (p.name, url)

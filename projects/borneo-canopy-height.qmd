@@ -29,4 +29,6 @@ pandemic.
 
 **News:** [Stanford Woods Institute, July 2026](https://woods.stanford.edu/news/community-led-health-and-livelihood-programs-helped-protect-rainforests-during-pandemic)
 
+**Code:** [canopy_height_ml](https://github.com/Bushytop/canopy_height_ml) (MIT license)
+
 Figures from Chamberlin et al. 2025, CC BY 4.0.

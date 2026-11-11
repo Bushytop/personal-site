@@ -33,4 +33,6 @@ for the mosquito that spreads dengue. Finding them on foot is slow and misses ma
 [Rosser et al. 2024, *Environmental Science and Pollution Research*](https://doi.org/10.1007/s11356-024-33801-0) ·
 [Bramante et al. 2026, *BMC Global and Public Health*](https://doi.org/10.1186/s44263-026-00250-5)
 
+**Code:** [Aedes-Tire-Detection](https://github.com/Rosser-Lab/Aedes-Tire-Detection) (tire model, MIT license)
+
 Figures from Hassan, Chamberlin et al. 2026, CC BY-NC.
