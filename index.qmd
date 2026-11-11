@@ -18,19 +18,20 @@ include-in-header: _includes/jsonld.html
 <section class="intro">
   <p>I'm a research data scientist at Stanford. I map where disease-carrying snails and
   mosquitoes live, and how crops and water change across a landscape, from drone flights up to
-  satellite imagery. I build the deep learning models behind those maps, which find tires and
-  trash, outline water plants and estimate crop yield from images. My work spans Senegal, Brazil, Costa Rica, Indonesia and Kenya, and I also
+  satellite imagery. I lead the analysis on each project, from raw imagery to finished maps:
+  calibration, terrain and water-flow modeling, the deep learning models that find tires and
+  outline water plants, and the statistics behind the results. My work spans Senegal, Brazil, Costa Rica, Indonesia and Kenya, and I also
   shoot and edit photo and video from the field.</p>
 </section>
 
 <section class="services">
   <div class="service-card">
     <h3>Drone mapping &amp; spatial analysis</h3>
-    <p>Mosquito and snail habitat, crop health and yield, vegetation and water mapping.</p>
+    <p>Mosquito and snail habitat, crop health and yield, vegetation and water mapping, terrain and drainage.</p>
   </div>
   <div class="service-card">
     <h3>Satellite remote sensing &amp; modeling</h3>
-    <p>Regional risk maps, habitat and species models, and scaling drone results up to satellite.</p>
+    <p>Regional risk maps, habitat and species models, statistical modeling, and scaling drone results up to satellite.</p>
   </div>
   <div class="service-card">
     <h3>Computer vision &amp; deep learning</h3>

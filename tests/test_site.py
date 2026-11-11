@@ -212,3 +212,12 @@ def test_deep_learning_named_on_home_and_project_pages(site):
     assert "deep learning" in intro
     for slug in ("mosquito-breeding-sites", "senegal-snail-habitat", "senegal-rice-fish"):
         assert "deep learning" in page(f"projects/{slug}.html"), slug
+
+
+def test_makassar_model_credited_to_me(site):
+    assert "I trained the deep learning model" in page("projects/mosquito-breeding-sites.html")
+
+
+def test_intro_says_i_lead_the_analysis(site):
+    intro = re.search(r'class="intro.*?</section>', page("index.html"), re.S).group(0)
+    assert "I lead the analysis" in intro
