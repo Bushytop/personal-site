@@ -41,7 +41,7 @@ website:
         href: https://www.linkedin.com/in/andrew-chamberlin-1522a918/
         aria-label: LinkedIn
   page-footer:
-    center: "© Andy Chamberlin"
+    center: "© Andy Chamberlin · [Privacy](/privacy.html) · [Terms](/terms.html)"
 
 format:
   html:

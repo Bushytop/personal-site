@@ -1,0 +1,31 @@
+---
+title: "Privacy"
+description: "What this site, my map apps and my Google API client collect."
+---
+
+*Last updated November 11, 2026.*
+
+## This site
+
+This site has no analytics, cookies or tracking scripts. It is hosted on GitHub Pages, which
+keeps standard server logs, including IP addresses, under
+[GitHub's privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
+
+## Map apps
+
+The Earth Engine map apps linked from my project pages open without sign-in and collect
+nothing about you. Google runs them under its
+[privacy policy](https://policies.google.com/privacy).
+
+## Google API client
+
+I run a Google OAuth client, "rclone-yggdrasil", for my own use only: it backs up files from
+my workstation to my own Google Drive. It is not offered to anyone else. It reads and writes
+only the Drive of the account that signs in to it, which is mine. That data moves only between
+my computer and my Drive; it is not shared, sold, or used to train AI models.
+
+Use of information received from Google APIs adheres to the
+[Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy),
+including the Limited Use requirements.
+
+Questions: see the [contact page](/contact.html).
