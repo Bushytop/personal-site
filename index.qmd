@@ -18,7 +18,8 @@ include-in-header: _includes/jsonld.html
 <section class="intro">
   <p>I'm a research data scientist at Stanford. I map where disease-carrying snails and
   mosquitoes live, and how crops and water change across a landscape, from drone flights up to
-  satellite imagery. My work spans Senegal, Brazil, Costa Rica, Indonesia and Kenya, and I also
+  satellite imagery. I build the deep learning models behind those maps, which find tires and
+  trash, outline water plants and estimate crop yield from images. My work spans Senegal, Brazil, Costa Rica, Indonesia and Kenya, and I also
   shoot and edit photo and video from the field.</p>
 </section>
 
@@ -30,6 +31,10 @@ include-in-header: _includes/jsonld.html
   <div class="service-card">
     <h3>Satellite remote sensing &amp; modeling</h3>
     <p>Regional risk maps, habitat and species models, and scaling drone results up to satellite.</p>
+  </div>
+  <div class="service-card">
+    <h3>Computer vision &amp; deep learning</h3>
+    <p>Custom models that find objects and map land cover in drone and satellite images, from labeled examples to finished maps.</p>
   </div>
 </section>
 
@@ -50,7 +55,7 @@ include-in-header: _includes/jsonld.html
     <h3>Snail habitat, Brazil</h3>
     <p>Drone surveys of ponds and streams where schistosomiasis is spread.</p>
   </a>
-  <a class="project-tile" href="projects/indonesia-tire-detection.html">
+  <a class="project-tile" href="projects/mosquito-breeding-sites.html">
     <img src="assets/img/indonesia-tire-tile.jpg" alt="Pile of tires outlined in red in a drone image of Makassar, Indonesia" loading="lazy">
     <h3>Mosquito breeding sites</h3>
     <p>Finding discarded tires and trash, where dengue mosquitoes breed, in drone images from Indonesia, Kenya and Costa Rica.</p>

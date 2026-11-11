@@ -19,6 +19,10 @@ how many water plants each site has.
 That plant cover turned out to predict how many children were infected better than counting
 snails did. It now guides where to remove plants and where to look for transmission.
 
+Mapping plants by hand at every site doesn't scale, so I build deep learning models that
+outline open water and floating and rooted plants in each drone map. They start from large
+image models trained elsewhere, so a handful of hand-labeled sites is enough to teach them.
+
 **Papers:** [Wood et al. 2019, *PNAS*](https://doi.org/10.1073/pnas.1903698116) ·
 [Chamberlin et al. 2021, *Geospatial Health*](https://doi.org/10.4081/gh.2020.818) ·
 [Jones et al. 2021, *PLOS NTD*](https://doi.org/10.1371/journal.pntd.0009712) ·

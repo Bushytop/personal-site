@@ -51,7 +51,7 @@ def test_cname(site):
 
 
 LAUNCH_SLUGS = ["senegal-snail-habitat", "senegal-rice-fish", "brazil-snail-habitat",
-                "indonesia-tire-detection"]
+                "mosquito-breeding-sites"]
 
 
 def test_home_sections_in_order(site):
@@ -61,14 +61,15 @@ def test_home_sections_in_order(site):
     pos = [html.find(m) for m in marks]
     assert all(p >= 0 for p in pos), dict(zip(marks, pos))
     assert pos == sorted(pos)
-    assert html.count('class="service-card') == 2
+    assert html.count('class="service-card') == 3
     assert html.count('class="project-tile') == 4
 
 
 def test_home_service_card_text(site):
     heads = re.findall(r'class="service-card.*?<h3[^>]*>(.*?)</h3>', page("index.html"), re.S)
     clean = [re.sub("<[^>]+>", "", h).replace("&amp;", "&").strip() for h in heads]
-    assert clean == ["Drone mapping & spatial analysis", "Satellite remote sensing & modeling"]
+    assert clean == ["Drone mapping & spatial analysis", "Satellite remote sensing & modeling",
+                     "Computer vision & deep learning"]
 
 
 def test_home_tiles_link_to_projects(site):
@@ -101,7 +102,7 @@ def test_draft_project_not_rendered(site):
 def test_project_pages_link_papers(site):
     expect = {
         "senegal-snail-habitat": "doi.org/10.1073/pnas.1903698116",
-        "indonesia-tire-detection": "doi.org/10.1016/j.rsase.2026.102011",
+        "mosquito-breeding-sites": "doi.org/10.1016/j.rsase.2026.102011",
         "brazil-snail-habitat": "doi.org/10.1038/s41467-024-48335-9",
     }
     for slug, doi in expect.items():
@@ -173,7 +174,7 @@ def test_project_paper_links_have_years(site):
 
 
 def test_indonesia_links_rosser_lab_papers(site):
-    html = page("projects/indonesia-tire-detection.html")
+    html = page("projects/mosquito-breeding-sites.html")
     for doi in ("10.1186/s13071-026-07646-0", "10.1186/s13071-025-06706-1",
                 "10.1007/s11356-024-33801-0", "10.1186/s44263-026-00250-5"):
         assert f"doi.org/{doi}" in html, doi
@@ -185,7 +186,7 @@ def test_senegal_links_jones_2021(site):
 
 def test_indonesia_tile_credited_on_home(site):
     html = page("index.html")
-    tile = re.search(r'href="projects/indonesia-tire-detection.html".*?</a>', html, re.S).group(0)
+    tile = re.search(r'href="projects/mosquito-breeding-sites.html".*?</a>', html, re.S).group(0)
     assert "CC BY-NC" in tile
 
 
@@ -195,8 +196,19 @@ def test_no_unloaded_webfont():
 
 
 def test_dengue_page_and_tile_name_all_three_countries(site):
-    tile = re.search(r'href="projects/indonesia-tire-detection.html".*?</a>', page("index.html"), re.S).group(0)
-    body = re.search(r"<main.*?</main>", page("projects/indonesia-tire-detection.html"), re.S).group(0)
+    tile = re.search(r'href="projects/mosquito-breeding-sites.html".*?</a>', page("index.html"), re.S).group(0)
+    body = re.search(r"<main.*?</main>", page("projects/mosquito-breeding-sites.html"), re.S).group(0)
     for country in ("Indonesia", "Kenya", "Costa Rica"):
         assert country in tile, country
         assert country in body, country
+
+
+def test_old_dengue_slug_gone(site):
+    assert not (site / "projects" / "indonesia-tire-detection.html").exists()
+
+
+def test_deep_learning_named_on_home_and_project_pages(site):
+    intro = re.search(r'class="intro.*?</section>', page("index.html"), re.S).group(0)
+    assert "deep learning" in intro
+    for slug in ("mosquito-breeding-sites", "senegal-snail-habitat", "senegal-rice-fish"):
+        assert "deep learning" in page(f"projects/{slug}.html"), slug

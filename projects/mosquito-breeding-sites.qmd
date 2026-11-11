@@ -14,12 +14,13 @@ date: 2024-01-01
 Discarded tires and trash collect rainwater and are some of the most productive breeding sites
 for the mosquito that spreads dengue. Finding them on foot across a town takes weeks.
 
-- **Indonesia:** in Makassar, we trained a computer model to find tires in drone imagery
-  automatically. I handle the imagery from raw drone photos onward.
+- **Indonesia:** in Makassar, we trained a deep learning model to find tires in drone imagery
+  automatically. I take the imagery from raw drone photos to finished maps, and I'm building
+  the next model, which sorts trash piles into types as well as finding tires.
 - **Kenya:** the same group built a way to spot trash piles and tires in drone images and
   checked it against surveys on foot.
 - **Costa Rica:** I planned drone flights in two regions and am testing whether the tire model
-  carries over to new towns, and how drone maps scale up to satellite imagery.
+  works in towns it was never trained on, and how drone maps scale up to satellite imagery.
 
 ::: {.gallery}
 ![](../assets/img/indonesia-tire-1.jpg){fig-alt="Drone map of Makassar with ground photos of tires and trash sites"}

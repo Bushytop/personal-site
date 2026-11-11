@@ -6,7 +6,7 @@
 .hero-text p { margin: .25rem 0 0; font-size: 1.1rem; }
 .intro { max-width: 46rem; font-size: 1.1rem; }
 .services, .tiles { display: grid; gap: 1rem; margin: 1.5rem 0; }
-.services { grid-template-columns: 1fr 1fr; }
+.services { grid-template-columns: repeat(3, 1fr); }
 .tiles { grid-template-columns: repeat(4, 1fr); }
 .service-card { border: 1px solid rgba(127,127,127,.35); border-radius: 6px; padding: 1rem; }
 .service-card h3 { font-size: 1.1rem; margin-top: 0; }
