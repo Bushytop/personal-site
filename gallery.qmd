@@ -31,11 +31,11 @@ Marine Station open house, and have shown in talks since.
 <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/UvfhiwaCTfc" title="Open House 2018: drone footage from the Senegal River valley" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
 ```
 
-**Flights for fun.** Big Sur, Chico, the Santa Cruz Mountains, Lake Tahoe, the Florida Keys and
+**Flights for fun.** Carmel, Big Sur, Chico, the Santa Cruz Mountains, Lake Tahoe, the Florida Keys and
 Biscayne Bay, 2019–2020.
 
 ```{=html}
-<div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/iUDrUhzLS5E" title="Drone reel: California, Lake Tahoe and Florida" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+<div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/jE3RHEWOMxw" title="Drone reel: California, Lake Tahoe and Florida" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
 ```
 
 I also shot some of the footage in bioGraphic's short film

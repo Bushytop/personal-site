@@ -380,7 +380,7 @@ def test_home_links_gallery(site):
     assert 'href="gallery.html"' in strip
 
 
-VIDEOS = {"iUDrUhzLS5E": "reel", "UvfhiwaCTfc": "open house", "2X4UrFdy08Y": "gsh"}
+VIDEOS = {"jE3RHEWOMxw": "reel", "UvfhiwaCTfc": "open house", "2X4UrFdy08Y": "gsh"}
 
 
 def test_gallery_embeds_videos_privacy_mode(site):
