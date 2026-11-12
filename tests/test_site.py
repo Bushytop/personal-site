@@ -378,3 +378,23 @@ def test_home_links_gallery(site):
     html = page("index.html")
     strip = re.search(r'class="gallery-strip.*?</section>', html, re.S).group(0)
     assert 'href="gallery.html"' in strip
+
+
+VIDEOS = {"iUDrUhzLS5E": "reel", "UvfhiwaCTfc": "open house", "2X4UrFdy08Y": "gsh"}
+
+
+def test_gallery_embeds_videos_privacy_mode(site):
+    html = page("gallery.html")
+    for vid in VIDEOS:
+        assert f"https://www.youtube-nocookie.com/embed/{vid}" in html, vid
+    assert "youtube.com/embed" not in html
+    for frame in re.findall(r"<iframe[^>]*>", html):
+        assert 'title="' in frame and 'loading="lazy"' in frame
+
+
+def test_snail_page_links_video_abstract(site):
+    assert "youtu.be/2X4UrFdy08Y" in page("projects/senegal-snail-habitat.html")
+
+
+def test_privacy_mentions_youtube(site):
+    assert "YouTube" in page("privacy.html")

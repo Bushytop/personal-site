@@ -27,4 +27,6 @@ outline open water and floating and rooted plants in each drone map.
 [Jones et al. 2021, *PLOS NTD*](https://doi.org/10.1371/journal.pntd.0009712) ·
 [Liu et al. 2022, *Remote Sensing*](https://doi.org/10.3390/rs14061345)
 
+**Video:** [Video abstract for Chamberlin et al. 2021](https://youtu.be/2X4UrFdy08Y)
+
 **News:** [Stanford Report, March 2026](https://news.stanford.edu/stories/2026/03/ai-platform-disease-mapping-schistosomiasis-research)
