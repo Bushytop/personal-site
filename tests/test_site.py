@@ -226,9 +226,14 @@ def test_makassar_model_credited_to_me(site):
     assert "I trained the deep learning model" in page("projects/mosquito-breeding-sites.html")
 
 
-def test_intro_says_i_lead_the_analysis(site):
+def test_lead_stated_without_hedge(site):
     intro = re.search(r'class="intro.*?</section>', page("index.html"), re.S).group(0)
-    assert "I lead the analysis" in intro
+    intro = " ".join(intro.split())
+    assert "I lead the drone and remote sensing work" in intro
+    about = " ".join(page("about.html").split())
+    assert "I lead the drone and remote sensing work" in about
+    for html in (intro, about):
+        assert "most of our projects" not in html and "On most projects" not in html
 
 
 def test_tire_model_is_ours(site):

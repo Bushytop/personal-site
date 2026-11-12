@@ -5,9 +5,8 @@ description: "Andy Chamberlin, research data scientist at Stanford: drone and sa
 
 I'm a research data scientist at Stanford University in Disease Ecology in a Changing World
 (DECO), a research initiative of the Stanford Center for Human and Planetary Health co-led by
-Giulio De Leo and Erin Mordecai. I also work closely with Joelle Rosser's lab on dengue. On most
-of our projects I lead the drone and remote sensing work, from study design through published
-maps.
+Giulio De Leo and Erin Mordecai. I also work closely with Joelle Rosser's lab on dengue. I lead
+the drone and remote sensing work, from study design through published maps.
 
 ## What I do
 

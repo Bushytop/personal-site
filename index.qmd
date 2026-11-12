@@ -1,6 +1,6 @@
 ---
 pagetitle: "Drone and satellite mapping"
-description: "Andy Chamberlin maps disease-carrying snails and mosquitoes, water and forests with drones and satellites."
+description: "Andy Chamberlin uses drones, satellites and deep learning to map ecological change and disease risk across landscapes."
 image: assets/img/share.jpg
 image-alt: "Aerial view of a river channel in the Senegal River valley"
 page-layout: full
@@ -16,12 +16,10 @@ include-in-header: _includes/jsonld.html
 </header>
 
 <section class="intro">
-  <p>I'm a research data scientist at Stanford. I map where disease-carrying snails and
-  mosquitoes live, and how water, plants and forests change across a landscape, from drone
-  flights up to satellite imagery. On most projects I lead the analysis from raw imagery to
-  finished maps, including the deep learning models that find tires and outline water plants.
-  My work spans Senegal, Brazil, Costa Rica, Indonesia and Kenya, and I also shoot and edit
-  photo and video from the field.</p>
+  <p>I'm a research data scientist at Stanford. I use drones, satellites and deep learning to
+  map ecological change across landscapes and pinpoint where disease risk is highest. I lead the
+  drone and remote sensing work, from study design to finished maps, on projects in Senegal,
+  Brazil, Costa Rica, Indonesia and Kenya. I also shoot and edit photo and video in the field.</p>
 </section>
 
 <section class="services">
