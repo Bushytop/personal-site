@@ -3,7 +3,8 @@
 
 Inputs:  images.yml at the repo root, a list of {root: name, src: path under that root,
          out: name.jpg, alt: text,
-         optional crop: [left, top, right, bottom]}; image_roots.yml (gitignored) maps each root name to a local
+         optional crop: [left, top, right, bottom], optional thumb: long edge px for a
+         <out stem>-thumb.jpg copy}; image_roots.yml (gitignored) maps each root name to a local
          folder, so no local paths land in this public repo
 Outputs: assets/img/<out>, long edge <= 2000 px, JPEG quality 82, no EXIF/XMP
 
@@ -65,6 +66,9 @@ def build_from_manifest(manifest: Path, out_dir: Path, roots: dict | None = None
         dst = out_dir / e["out"]
         prepare(src, dst, crop=e.get("crop"))
         outs.append(dst)
+        if e.get("thumb"):
+            prepare(src, dst.with_name(f"{dst.stem}-thumb.jpg"), long_edge=e["thumb"],
+                    crop=e.get("crop"))
     return outs
 
 

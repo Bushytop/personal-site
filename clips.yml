@@ -1,0 +1,2 @@
+# Short muted loops for the site. start/duration in seconds.
+- {root: videos, src: Senegal_best_clips/DJI_0114_Trim_MGFM7_1.mp4, out: senegal-loop.mp4, start: 58, duration: 12}

@@ -1,0 +1,63 @@
+---
+title: "Photo & video"
+description: "Drone photos and video by Andy Chamberlin, from fieldwork in Senegal and flights for fun across the US."
+image: assets/img/gallery-sen-meander.jpg
+include-after-body: _includes/glightbox.html
+---
+
+```{=html}
+<video class="gallery-loop" autoplay muted loop playsinline preload="metadata"
+  poster="assets/video/senegal-loop.jpg" aria-label="Drone flying back from a village water point on a river in northern Senegal">
+  <source src="assets/video/senegal-loop.mp4" type="video/mp4">
+</video>
+```
+
+I shoot and edit photo and video on most field trips, and fly for fun when I can. Tap a photo to
+see it full size.
+
+## Video
+
+**Open House 2018.** A short film I shot and edited in the Senegal River valley for the Hopkins
+Marine Station open house, and have shown in talks since.
+
+I also shot some of the footage in bioGraphic's short film
+[*Protected by Prawns*](https://www.biographic.com/protected-by-prawns/) (2019).
+
+## Fieldwork, Senegal
+
+```{=html}
+<div class="photo-grid">
+<a href="assets/img/gallery-sen-meander.jpg" class="lightbox" data-gallery="field" data-description="Senegal River valley"><img src="assets/img/gallery-sen-meander-thumb.jpg" alt="River meander and irrigated fields in the Senegal River valley" loading="lazy"></a>
+<a href="assets/img/gallery-sen-sunrise.jpg" class="lightbox" data-gallery="field" data-description="Sunrise over rice fields, northern Senegal"><img src="assets/img/gallery-sen-sunrise-thumb.jpg" alt="Sun rising over flooded rice fields and a winding channel in northern Senegal" loading="lazy"></a>
+<a href="assets/img/gallery-sen-waterpoint.jpg" class="lightbox" data-gallery="field" data-description="Village water point, Senegal"><img src="assets/img/gallery-sen-waterpoint-thumb.jpg" alt="Low sun on a village water point with tall reeds in the foreground" loading="lazy"></a>
+<a href="assets/img/gallery-sen-lilies.jpg" class="lightbox" data-gallery="field" data-description="Water lilies, Senegal"><img src="assets/img/gallery-sen-lilies-thumb.jpg" alt="Water lilies on a calm pond fringed with reeds" loading="lazy"></a>
+<a href="assets/img/gallery-sen-canal.jpg" class="lightbox" data-gallery="field" data-description="Irrigation canal, Senegal River valley"><img src="assets/img/gallery-sen-canal-thumb.jpg" alt="Straight irrigation canal running between sandy ground and rice fields" loading="lazy"></a>
+<a href="assets/img/gallery-sen-baobab.jpg" class="lightbox" data-gallery="field" data-description="Baobab and lake, Senegal"><img src="assets/img/gallery-sen-baobab-thumb.jpg" alt="Baobab tree beside a still lake under a cloudy sky" loading="lazy"></a>
+<a href="assets/img/gallery-sen-fields.jpg" class="lightbox" data-gallery="field" data-description="Evening over fields, northern Senegal"><img src="assets/img/gallery-sen-fields-thumb.jpg" alt="Golden evening light over fenced fields, scattered trees and a small pond" loading="lazy"></a>
+<a href="assets/img/gallery-sen-shore.jpg" class="lightbox" data-gallery="field" data-description="Lake shore, Senegal"><img src="assets/img/gallery-sen-shore-thumb.jpg" alt="Lake shore with green reeds against orange sand" loading="lazy"></a>
+</div>
+```
+
+## For fun
+
+Flights in California, Florida and Tennessee.
+
+```{=html}
+<div class="photo-grid">
+<a href="assets/img/gallery-garrapata.jpg" class="lightbox" data-gallery="fun" data-description="Garrapata, Big Sur"><img src="assets/img/gallery-garrapata-thumb.jpg" alt="Big Sur coastline at Garrapata with sunset light on the hills" loading="lazy"></a>
+<a href="assets/img/gallery-atlas-peak.jpg" class="lightbox" data-gallery="fun" data-description="Atlas Peak, Napa County"><img src="assets/img/gallery-atlas-peak-thumb.jpg" alt="Panorama of oak-covered hills from above Atlas Peak, Napa County" loading="lazy"></a>
+<a href="assets/img/gallery-chico-canyon.jpg" class="lightbox" data-gallery="fun" data-description="Upper Bidwell Park, Chico"><img src="assets/img/gallery-chico-canyon-thumb.jpg" alt="Basalt cliff and wooded canyon below a grassy rim near Chico, California" loading="lazy"></a>
+<a href="assets/img/gallery-chico-ridge.jpg" class="lightbox" data-gallery="fun" data-description="Upper Bidwell Park, Chico"><img src="assets/img/gallery-chico-ridge-thumb.jpg" alt="Two bare dead trees on a dry ridge above the Sacramento Valley" loading="lazy"></a>
+<a href="assets/img/gallery-carmel-sunset.jpg" class="lightbox" data-gallery="fun" data-description="Carmel River Beach"><img src="assets/img/gallery-carmel-sunset-thumb.jpg" alt="Red and orange sunset over the ocean at Carmel River Beach" loading="lazy"></a>
+<a href="assets/img/gallery-monteagle-valley.jpg" class="lightbox" data-gallery="fun" data-description="Cumberland Plateau, Tennessee"><img src="assets/img/gallery-monteagle-valley-thumb.jpg" alt="Forested valley on the Cumberland Plateau, Tennessee" loading="lazy"></a>
+<a href="assets/img/gallery-monteagle-clouds.jpg" class="lightbox" data-gallery="fun" data-description="Cumberland Plateau, Tennessee"><img src="assets/img/gallery-monteagle-clouds-thumb.jpg" alt="Summer clouds over a forested valley in Tennessee" loading="lazy"></a>
+<a href="assets/img/gallery-monteagle-lake.jpg" class="lightbox" data-gallery="fun" data-description="Cumberland Plateau, Tennessee"><img src="assets/img/gallery-monteagle-lake-thumb.jpg" alt="Small lake in unbroken forest at dusk" loading="lazy"></a>
+<a href="assets/img/gallery-keys-island.jpg" class="lightbox" data-gallery="fun" data-description="Florida Keys"><img src="assets/img/gallery-keys-island-thumb.jpg" alt="Mangrove island and shallow turquoise water in the Florida Keys" loading="lazy"></a>
+<a href="assets/img/gallery-keys-flats.jpg" class="lightbox" data-gallery="fun" data-description="Florida Keys"><img src="assets/img/gallery-keys-flats-thumb.jpg" alt="Seagrass flats and mangrove islets in the Florida Keys" loading="lazy"></a>
+<a href="assets/img/gallery-keys-mangroves.jpg" class="lightbox" data-gallery="fun" data-description="Florida Keys"><img src="assets/img/gallery-keys-mangroves-thumb.jpg" alt="Dead mangroves standing in shallow water in the Florida Keys" loading="lazy"></a>
+<a href="assets/img/gallery-biscayne-wake.jpg" class="lightbox" data-gallery="fun" data-description="Biscayne Bay, Miami"><img src="assets/img/gallery-biscayne-wake-thumb.jpg" alt="Boat wake on Biscayne Bay with the sun on the water" loading="lazy"></a>
+<a href="assets/img/gallery-coconut-grove.jpg" class="lightbox" data-gallery="fun" data-description="Coconut Grove, Miami"><img src="assets/img/gallery-coconut-grove-thumb.jpg" alt="Coconut Grove marina and Biscayne Bay from above, Miami" loading="lazy"></a>
+<a href="assets/img/gallery-bucks-lake.jpg" class="lightbox" data-gallery="fun" data-description="Bucks Lake, California"><img src="assets/img/gallery-bucks-lake-thumb.jpg" alt="Red SUV doing loops in fresh snow near Bucks Lake, California" loading="lazy"></a>
+<a href="assets/img/gallery-santa-cruz-mtns.jpg" class="lightbox" data-gallery="fun" data-description="Santa Cruz Mountains"><img src="assets/img/gallery-santa-cruz-mtns-thumb.jpg" alt="Redwood and fir forest under a gray sky in the Santa Cruz Mountains" loading="lazy"></a>
+</div>
+```

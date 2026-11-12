@@ -348,3 +348,33 @@ def test_tire_paper_co_first_marked(site):
     assert "Co-first authors" in html
     line = next(l for l in html.splitlines() if "rsase.2026.102011" in l)
     assert re.search(r"Hassan\*.*Chamberlin</strong>\*", line), line[:300]
+
+
+def test_gallery_page_in_navbar(site):
+    assert 'href="./gallery.html"' in page("index.html") or 'href="gallery.html"' in page("index.html")
+    html = page("gallery.html")
+    assert "Photo &amp; video" in html or "Photo & video" in html
+
+
+def test_gallery_loop_is_muted_autoplay(site):
+    html = page("gallery.html")
+    video = re.search(r"<video[^>]*>", html).group(0)
+    for attr in ("autoplay", "muted", "loop", "playsinline", "poster="):
+        assert attr in video, attr
+    assert (site / "assets" / "video" / "senegal-loop.mp4").exists()
+
+
+def test_gallery_photos_use_lightbox(site):
+    html = page("gallery.html")
+    assert html.count('class="lightbox"') >= 15
+    assert "glightbox" in html
+
+
+def test_gallery_credits_open_house_video(site):
+    assert "Hopkins Marine Station" in page("gallery.html")
+
+
+def test_home_links_gallery(site):
+    html = page("index.html")
+    strip = re.search(r'class="gallery-strip.*?</section>', html, re.S).group(0)
+    assert 'href="gallery.html"' in strip

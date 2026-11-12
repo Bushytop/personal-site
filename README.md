@@ -32,7 +32,11 @@ python scripts/build_jsonld.py      # only if profile.json changed
 Add or swap an image: add an entry (`src`, `out`, `alt`) to `images.yml`, then
 `python scripts/prepare_images.py`. To browse candidates first:
 `python scripts/contact_sheet.py contact_sheet/sheet <folder or files>` and open
-`contact_sheet/sheet/index.html`.
+`contact_sheet/sheet/index.html`. Gallery photos also set `thumb: 800` for the grid copy.
+
+Add or swap the video loop: edit `clips.yml` (`root`, `src`, `out`, `start`, `duration`), then
+`python scripts/prepare_clips.py`. Output is 1080p, muted, metadata-free, with a poster JPEG;
+keep loops under ~5 MB. Full-length videos go on YouTube (unlisted) and are embedded.
 
 Add a project: copy an existing `projects/*.qmd`, set `title`, `description`, `image`,
 `image-alt`, `date`. To hold a page back, prefix the file name with `_`.

@@ -26,6 +26,8 @@ website:
         text: Publications
       - href: media.qmd
         text: Media
+      - href: gallery.qmd
+        text: Photo & video
       - href: contact.qmd
         text: Contact
     right:

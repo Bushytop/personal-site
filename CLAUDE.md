@@ -12,7 +12,10 @@ and `...-plan.md`. Read the design before changing content.
   `<a class="email" data-u="hello" data-d="andychamberlin.com">` hook.
 - Facts and drone claims follow `~/Projects/cv/facts.md` ("Drone work: who flew what").
 - No unpublished results. Costa Rica stays `projects/_costa-rica-dengue.qmd` until a preprint posts.
-- Images go through `scripts/prepare_images.py` (strips GPS/EXIF); never commit originals.
+- Images go through `scripts/prepare_images.py` and loops through `scripts/prepare_clips.py`
+  (both strip GPS/metadata); never commit originals.
+- Photo & video page: no shots centered on private homes or recognizable people without their
+  okay. bioGraphic's *Protected by Prawns* is their film: link it, never re-host it.
   Manifest paths are relative to named roots in the gitignored `image_roots.yml`.
 - Copy: Andy's voice, plain words, no jargon on project pages (tests enforce a word list).
 - Run `pytest -q` before every push.

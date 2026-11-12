@@ -82,3 +82,12 @@ def test_manifest_crop_box(tmp_path):
     m.write_text(f"- src: {tmp_path / 'a.jpg'}\n  out: a.jpg\n  alt: x\n  crop: [100, 50, 500, 350]\n")
     (out,) = pi.build_from_manifest(m, tmp_path / "out")
     assert Image.open(out).size == (400, 300)
+
+
+def test_manifest_thumb_writes_small_copy(tmp_path):
+    _jpeg(tmp_path / "a.jpg", size=(4000, 3000))
+    m = tmp_path / "images.yml"
+    m.write_text(f"- src: {tmp_path / 'a.jpg'}\n  out: a.jpg\n  alt: x\n  thumb: 800\n")
+    pi.build_from_manifest(m, tmp_path / "out")
+    assert Image.open(tmp_path / "out" / "a.jpg").size == (2000, 1500)
+    assert Image.open(tmp_path / "out" / "a-thumb.jpg").size == (800, 600)

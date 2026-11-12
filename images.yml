@@ -68,3 +68,27 @@
   src: Senegal_bestImages/DJI_0130.JPG
   out: senegal-satellite-1.jpg
   alt: "Wide drone view over the Senegal River valley: channels, wetlands and farm fields to the horizon"
+# Photo & video page. Senegal work shots, then personal drone photos (US, flown by Andy).
+- {root: photos, src: Senegal_bestImages/final/DJI_0584-1.jpg, out: gallery-sen-meander.jpg, thumb: 800, alt: "River meander and irrigated fields in the Senegal River valley"}
+- {root: photos, src: Senegal_bestImages/final/DJI_0101-1.jpg, out: gallery-sen-sunrise.jpg, thumb: 800, alt: "Sun rising over flooded rice fields and a winding channel in northern Senegal"}
+- {root: photos, src: Senegal_bestImages/final/DJI_0114_2.jpg, out: gallery-sen-waterpoint.jpg, thumb: 800, alt: "Low sun on a village water point with tall reeds in the foreground"}
+- {root: photos, src: Senegal_bestImages/final/DJI_0107_1-1.jpg, out: gallery-sen-lilies.jpg, thumb: 800, alt: "Water lilies on a calm pond fringed with reeds"}
+- {root: photos, src: Senegal_bestImages/final/DJI_0076-1.jpg, out: gallery-sen-canal.jpg, thumb: 800, alt: "Straight irrigation canal running between sandy ground and rice fields"}
+- {root: photos, src: Senegal_bestImages/final/DJI_0372_2-1.jpg, out: gallery-sen-baobab.jpg, thumb: 800, alt: "Baobab tree beside a still lake under a cloudy sky"}
+- {root: photos, src: Senegal_bestImages/final/DJI_0186-1.jpg, out: gallery-sen-fields.jpg, thumb: 800, alt: "Golden evening light over fenced fields, scattered trees and a small pond"}
+- {root: photos, src: Senegal_bestImages/final/DJI_0953-1.jpg, out: gallery-sen-shore.jpg, thumb: 800, alt: "Lake shore with green reeds against orange sand"}
+- {root: photos, src: personal/Drone/edited/DJI_0367-Pano-1.jpg, out: gallery-garrapata.jpg, thumb: 800, alt: "Big Sur coastline at Garrapata with sunset light on the hills"}
+- {root: photos, src: personal/Drone/AtlasPeak_10Nov19/DJI_0119-Pano-1.jpg, out: gallery-atlas-peak.jpg, thumb: 800, alt: "Panorama of oak-covered hills from above Atlas Peak, Napa County"}
+- {root: photos, src: personal/Drone/edited/DJI_0094-1.jpg, out: gallery-chico-canyon.jpg, thumb: 800, alt: "Basalt cliff and wooded canyon below a grassy rim near Chico, California"}
+- {root: photos, src: personal/Drone/edited/DJI_0037-1.jpg, out: gallery-chico-ridge.jpg, thumb: 800, alt: "Two bare dead trees on a dry ridge above the Sacramento Valley"}
+- {root: photos, src: personal/Drone/edited/DJI_0278-Pano-1.jpg, out: gallery-carmel-sunset.jpg, thumb: 800, alt: "Red and orange sunset over the ocean at Carmel River Beach"}
+- {root: photos, src: personal/Drone/edited/Monteagle/DJI_0653-2.jpg, out: gallery-monteagle-valley.jpg, thumb: 800, alt: "Forested valley on the Cumberland Plateau, Tennessee"}
+- {root: photos, src: personal/Drone/edited/Monteagle/DJI_0701-6.jpg, out: gallery-monteagle-clouds.jpg, thumb: 800, alt: "Summer clouds over a forested valley in Tennessee"}
+- {root: photos, src: personal/Drone/edited/Monteagle/DJI_0919-HDR-14.jpg, out: gallery-monteagle-lake.jpg, thumb: 800, alt: "Small lake in unbroken forest at dusk"}
+- {root: photos, src: personal/Drone/Miami_keys_02Oct19/edited/DJI_0494-1.jpg, out: gallery-keys-island.jpg, thumb: 800, alt: "Mangrove island and shallow turquoise water in the Florida Keys"}
+- {root: photos, src: personal/Drone/Miami_keys_02Oct19/edited/DJI_0500-1-2.jpg, out: gallery-keys-flats.jpg, thumb: 800, alt: "Seagrass flats and mangrove islets in the Florida Keys"}
+- {root: photos, src: personal/Drone/Miami_keys_02Oct19/edited/DJI_0510-1-3.jpg, out: gallery-keys-mangroves.jpg, thumb: 800, alt: "Dead mangroves standing in shallow water in the Florida Keys"}
+- {root: photos, src: personal/Drone/Miami_keys_02Oct19/4oct_boat/DJI_0026-1.jpg, out: gallery-biscayne-wake.jpg, thumb: 800, alt: "Boat wake on Biscayne Bay with the sun on the water"}
+- {root: photos, src: CommodoreTrail/DJI_0600-1.jpg, out: gallery-coconut-grove.jpg, thumb: 800, alt: "Coconut Grove marina and Biscayne Bay from above, Miami"}
+- {root: photos, src: personal/Drone/edited/forChico/DJI_0141-1.jpg, out: gallery-bucks-lake.jpg, thumb: 800, alt: "Red SUV doing loops in fresh snow near Bucks Lake, California"}
+- {root: photos, src: personal/Drone/SkylineRoad_13Nov19/DJI_0110-HDR-1.jpg, out: gallery-santa-cruz-mtns.jpg, thumb: 800, alt: "Redwood and fir forest under a gray sky in the Santa Cruz Mountains"}

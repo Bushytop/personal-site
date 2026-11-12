@@ -74,6 +74,16 @@ include-in-header: _includes/jsonld.html
   <p><a href="media.html">All media →</a></p>
 </section>
 
+<section class="gallery-strip">
+  <h2 class="section-head">Photo &amp; video</h2>
+  <a href="gallery.html" class="strip-photos">
+    <img src="assets/img/gallery-sen-meander-thumb.jpg" alt="River meander and irrigated fields in the Senegal River valley" loading="lazy">
+    <img src="assets/img/gallery-garrapata-thumb.jpg" alt="Big Sur coastline at Garrapata with sunset light on the hills" loading="lazy">
+    <img src="assets/img/gallery-keys-flats-thumb.jpg" alt="Seagrass flats and mangrove islets in the Florida Keys" loading="lazy">
+  </a>
+  <p><a href="gallery.html">Drone photos and video from the field and beyond →</a></p>
+</section>
+
 <section class="get-in-touch">
   <p>Get in touch: <a class="email" data-u="hello" data-d="andychamberlin.com">email</a></p>
 </section>

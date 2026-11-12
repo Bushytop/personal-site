@@ -26,3 +26,15 @@
   .hero { min-height: 240px; }
   .hero-text h1 { font-size: 1.7rem; }
 }
+
+/* Photo & video page */
+.gallery-loop { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 6px; margin-bottom: 1rem; background: #222; }
+.photo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 1rem 0 2rem; }
+.photo-grid a { display: block; aspect-ratio: 3 / 2; overflow: hidden; border-radius: 4px; }
+.photo-grid img { width: 100%; height: 100%; object-fit: cover; transition: transform .2s; }
+.photo-grid a:hover img { transform: scale(1.03); }
+.gallery-strip .strip-photos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.gallery-strip .strip-photos img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 4px; }
+@media (max-width: 600px) {
+  .photo-grid { grid-template-columns: repeat(2, 1fr); }
+}
