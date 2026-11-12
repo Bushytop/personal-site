@@ -39,14 +39,14 @@
     "href": "privacy.html",
     "title": "Privacy",
     "section": "",
-    "text": "Last updated November 11, 2026."
+    "text": "Last updated November 12, 2026."
   },
   {
     "objectID": "privacy.html#this-site",
     "href": "privacy.html#this-site",
     "title": "Privacy",
     "section": "This site",
-    "text": "This site\nThis site has no analytics, cookies or tracking scripts. It is hosted on GitHub Pages, which keeps standard server logs, including IP addresses, under GitHub’s privacy statement."
+    "text": "This site\nThis site has no analytics, cookies or tracking scripts of its own. It is hosted on GitHub Pages, which keeps standard server logs, including IP addresses, under GitHub’s privacy statement.\nThe Photo & video page embeds YouTube videos in privacy-enhanced mode, which sets no YouTube cookies until you play a video; playback then falls under Google’s privacy policy. That page also loads its photo viewer from the jsDelivr CDN, which sees your IP address like any web host."
   },
   {
     "objectID": "privacy.html#map-apps",
@@ -67,14 +67,21 @@
     "href": "index.html",
     "title": "Andy Chamberlin",
     "section": "",
-    "text": "Drone and satellite mapping of landscapes and disease risk.\n  \n\n\n\n  I'm a research data scientist at Stanford. I map where disease-carrying snails and\n  mosquitoes live, and how water, plants and forests change across a landscape, from drone\n  flights up to satellite imagery. On most projects I lead the analysis from raw imagery to\n  finished maps, including the deep learning models that find tires and outline water plants.\n  My work spans Senegal, Brazil, Costa Rica, Indonesia and Kenya, and I also shoot and edit\n  photo and video from the field.\n\n\n\n  \n    Drone mapping & spatial analysis\n    Mosquito and snail habitat, vegetation and water mapping, crop monitoring, terrain and drainage.\n  \n  \n    Satellite remote sensing & modeling\n    Regional risk maps, habitat and species models, statistical modeling, and scaling drone results up to satellite.\n  \n  \n    Computer vision & deep learning\n    Custom models that find objects and map land cover in drone and satellite images, from labeled examples to finished maps.\n  \n\n\nProjects\n\n  \n    \n    Snail habitat, Senegal\n    Mapping the water plants where schistosomiasis snails live along the Senegal River.\n  \n  \n    \n    Rice and fish, Senegal\n    Estimating rice yield from drone and satellite imagery in fields stocked with fish.\n  \n  \n    \n    Forest canopy height, Borneo\n    Predicting rainforest height across Indonesian Borneo from free satellite data.\n    Image: Chamberlin et al. 2025, CC BY\n  \n  \n    \n    Mosquito breeding sites\n    Finding discarded tires and trash, where dengue mosquitoes breed, in drone images from Indonesia, Kenya and Costa Rica.\n    Image: Hassan, Chamberlin et al. 2026, CC BY-NC\n  \n\n\n\n  In the media\n  \n    NPR, July 2026: A promising tale from Senegal of fish, rice … and dangerous worms\n    Stanford Report, April 2026: Drones and AI take flight to combat mosquito-borne disease\n    Stanford Report, March 2026: AI platform maps disease risk from space\n    Stanford HAI, March 2020: Bringing AI to a Neglected Tropical Disease\n  \n  All media →\n\n\n\n  Get in touch: email"
+    "text": "Drone and satellite mapping of landscapes and disease risk.\n  \n\n\n\n  I'm a research data scientist at Stanford. I use drones, satellites and deep learning to\n  map ecological change across landscapes and pinpoint where disease risk is highest. I lead the\n  drone and remote sensing work, from study design to finished maps, on projects in Senegal,\n  Brazil, Costa Rica, Indonesia and Kenya. I also shoot and edit photo and video in the field.\n\n\n\n  \n    Drone mapping & spatial analysis\n    Mosquito and snail habitat, vegetation and water mapping, crop monitoring, terrain and drainage.\n  \n  \n    Satellite remote sensing & modeling\n    Regional risk maps, habitat and species models, statistical modeling, and scaling drone results up to satellite.\n  \n  \n    Computer vision & deep learning\n    Custom models that find objects and map land cover in drone and satellite images, from labeled examples to finished maps.\n  \n\n\nProjects\n\n  \n    \n    Snail habitat, Senegal\n    Mapping the water plants where schistosomiasis snails live along the Senegal River.\n  \n  \n    \n    Rice and fish, Senegal\n    Estimating rice yield from drone and satellite imagery in fields stocked with fish.\n  \n  \n    \n    Forest canopy height, Borneo\n    Predicting rainforest height across Indonesian Borneo from free satellite data.\n    Image: Chamberlin et al. 2025, CC BY\n  \n  \n    \n    Mosquito breeding sites\n    Finding discarded tires and trash, where dengue mosquitoes breed, in drone images from Indonesia, Kenya and Costa Rica.\n    Image: Hassan, Chamberlin et al. 2026, CC BY-NC\n  \n\n\n\n  In the media\n  \n    NPR, July 2026: A promising tale from Senegal of fish, rice … and dangerous worms\n    Stanford Report, April 2026: Drones and AI take flight to combat mosquito-borne disease\n    Stanford Report, March 2026: AI platform maps disease risk from space\n    Stanford HAI, March 2020: Bringing AI to a Neglected Tropical Disease\n  \n  All media →\n\n\n\n  Photo & video\n  \n    \n    \n    \n  \n  Drone photos and video from the field and beyond →\n\n\n\n  Get in touch: email"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "I’m glad to hear about collaborations, drone or satellite mapping projects, and speaking invitations.\nEmail: email\nElsewhere: ORCID · Google Scholar · GitHub · LinkedIn"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "I’m a research data scientist at Stanford University in Disease Ecology in a Changing World (DECO), a research initiative of the Stanford Center for Human and Planetary Health co-led by Giulio De Leo and Erin Mordecai. I also work closely with Joelle Rosser’s lab on dengue. On most of our projects I lead the drone and remote sensing work, from study design through published maps."
+    "text": "I’m a research data scientist at Stanford University in Disease Ecology in a Changing World (DECO), a research initiative of the Stanford Center for Human and Planetary Health co-led by Giulio De Leo and Erin Mordecai. I also work closely with Joelle Rosser’s lab on dengue. I lead the drone and remote sensing work, from study design through published maps."
   },
   {
     "objectID": "about.html#what-i-do",
@@ -105,11 +112,32 @@
     "text": "Background\n\nB.S., Biology, University of Wisconsin–Madison\nFAA Part 107 remote pilot; private pilot license\nConsultant to Conservation International, mapping water-management infrastructure in sub-Saharan Africa (2019–2020)\nFrench and Spanish\nField photography and video"
   },
   {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
+    "objectID": "gallery.html",
+    "href": "gallery.html",
+    "title": "Photo & video",
     "section": "",
-    "text": "I’m glad to hear about collaborations, drone or satellite mapping projects, and speaking invitations.\nEmail: email\nElsewhere: ORCID · Google Scholar · GitHub · LinkedIn"
+    "text": "I shoot and edit photo and video on most field trips, and fly for fun when I can. Tap a photo to see it full size."
+  },
+  {
+    "objectID": "gallery.html#video",
+    "href": "gallery.html#video",
+    "title": "Photo & video",
+    "section": "Video",
+    "text": "Video\nSnail habitat from the air. The video abstract for our 2021 Geospatial Health paper on mapping schistosomiasis snail habitat with drones in Senegal.\n\nOpen House 2018. A short film I shot and edited in the Senegal River valley for the Hopkins Marine Station open house, and have shown in talks since.\n\nFlights for fun. Big Sur, Chico, the Santa Cruz Mountains, Lake Tahoe, the Florida Keys and Biscayne Bay, 2019–2020.\n\nI also shot some of the footage in bioGraphic’s short film Protected by Prawns (2019)."
+  },
+  {
+    "objectID": "gallery.html#fieldwork-senegal",
+    "href": "gallery.html#fieldwork-senegal",
+    "title": "Photo & video",
+    "section": "Fieldwork, Senegal",
+    "text": "Fieldwork, Senegal"
+  },
+  {
+    "objectID": "gallery.html#for-fun",
+    "href": "gallery.html#for-fun",
+    "title": "Photo & video",
+    "section": "For fun",
+    "text": "For fun\nFlights in California, Florida and Tennessee."
   },
   {
     "objectID": "media.html",
@@ -165,7 +193,7 @@
     "href": "projects/senegal-snail-habitat.html",
     "title": "Snail habitat, Senegal",
     "section": "",
-    "text": "Schistosomiasis spreads through freshwater snails that shelter in water plants. Since 2016 I have led drone mapping at village water sites along the lower Senegal River, flying the early surveys and later training local partners to fly them. The maps show how much of each site is open water and how much is covered by plants.\nThat plant cover turned out to predict how many children were infected better than counting snails did. It now guides where to remove plants and where to look for transmission.\nMapping plants by hand at every site doesn’t scale, so I’m building deep learning models that outline open water and floating and rooted plants in each drone map.\nPapers: Wood et al. 2019, PNAS · Chamberlin et al. 2021, Geospatial Health · Jones et al. 2021, PLOS NTD · Liu et al. 2022, Remote Sensing\nNews: Stanford Report, March 2026"
+    "text": "Schistosomiasis spreads through freshwater snails that shelter in water plants. Since 2016 I have led drone mapping at village water sites along the lower Senegal River, flying the early surveys and later training local partners to fly them. The maps show how much of each site is open water and how much is covered by plants.\nThat plant cover turned out to predict how many children were infected better than counting snails did. It now guides where to remove plants and where to look for transmission.\nMapping plants by hand at every site doesn’t scale, so I’m building deep learning models that outline open water and floating and rooted plants in each drone map.\nPapers: Wood et al. 2019, PNAS · Chamberlin et al. 2021, Geospatial Health · Jones et al. 2021, PLOS NTD · Liu et al. 2022, Remote Sensing\nVideo: Video abstract for Chamberlin et al. 2021\nNews: Stanford Report, March 2026"
   },
   {
     "objectID": "publications.html",
