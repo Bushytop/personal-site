@@ -25,8 +25,10 @@ and `...-plan.md`. Read the design before changing content.
 - Credit framing: "I lead/trained" for Andy's role, "our" for team products.
 
 ## Adding an Earth Engine app
-Apps come from the `gee-inventory` work. For each public app: link it from the project page it
-belongs to (`**App:** [name](url)`), and add a screenshot through `images.yml`. Once two or more
+Apps come from the `gee-inventory` work. Standalone tools (Climate Explorer) get their own page in
+the Projects "Tools" group, with example share links and data credits (ERA5 needs the Copernicus
+line). Screenshots: `app_shots` root, captured headless with its `cdp_shot.py`. Otherwise
+link each public app from the project page it belongs to (`**App:** [name](url)`), and add a screenshot through `images.yml`. Once two or more
 are live, add an "Interactive maps" listing group to `projects/index.qmd`; once there are
 several, consider an "Apps" navbar item. Only apps that open without sign-in, showing published
 or cleared products (De Leo cleared the Kalimantan canopy height map, 2026-11-11).
