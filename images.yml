@@ -92,3 +92,7 @@
 - {root: photos, src: CommodoreTrail/DJI_0600-1.jpg, out: gallery-coconut-grove.jpg, thumb: 800, alt: "Coconut Grove marina and Biscayne Bay from above, Miami"}
 - {root: photos, src: personal/Drone/edited/forChico/DJI_0141-1.jpg, out: gallery-bucks-lake.jpg, thumb: 800, alt: "Red SUV doing loops in fresh snow near Bucks Lake, California"}
 - {root: photos, src: personal/Drone/SkylineRoad_13Nov19/DJI_0110-HDR-1.jpg, out: gallery-santa-cruz-mtns.jpg, thumb: 800, alt: "Redwood and fir forest under a gray sky in the Santa Cruz Mountains"}
+# Climate Explorer screenshots (captured headless with app_shots/cdp_shot.py)
+- {root: app_shots, src: climate_explorer_makassar_jan_days.png, out: ce-makassar.jpg, thumb: 800, crop: [420, 70, 1600, 1000], alt: "Climate Explorer at Makassar in January: a table of rain, dry-window, wind, heat and clear-sky odds, and charts of rain chance and temperature by hour"}
+- {root: app_shots, src: climate_explorer_saintlouis_aug_years.png, out: ce-saint-louis.jpg, thumb: 800, crop: [420, 70, 1600, 1000], alt: "Climate Explorer at Saint-Louis, Senegal: August rain and temperature in each year, with a table of rain by year and month"}
+- {root: app_shots, src: climate_explorer_tampa_aug_days.png, out: ce-tampa.jpg, thumb: 800, crop: [420, 70, 1600, 1000], alt: "Climate Explorer at Tampa in August: rain chance peaking in the afternoon and temperature by hour, in Fahrenheit"}

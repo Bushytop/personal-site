@@ -294,13 +294,14 @@ def test_no_maxar_imagery_anywhere(site):
 
 def test_projects_page_grouped(site):
     html = page("projects/index.html")
-    heads = ["Drone mapping", "Satellite mapping", "Image identification"]
+    heads = ["Drone mapping", "Satellite mapping", "Image identification", "Tools"]
     pos = [html.find(h) for h in heads]
     assert all(x >= 0 for x in pos) and pos == sorted(pos), pos
     groups = {0: ["senegal-snail-habitat", "senegal-rice-fish", "brazil-snail-habitat",
                   "mosquito-breeding-sites"],
               1: ["borneo-canopy-height", "senegal-satellite-habitat"],
-              2: ["snail-parasite-id"]}
+              2: ["snail-parasite-id"],
+              3: ["climate-explorer"]}
     bounds = pos + [len(html)]
     for g, slugs in groups.items():
         sec = html[bounds[g]:bounds[g + 1]]
@@ -398,3 +399,28 @@ def test_snail_page_links_video_abstract(site):
 
 def test_privacy_mentions_youtube(site):
     assert "YouTube" in page("privacy.html")
+
+
+CE_APP = "https://ee-andychamberlin.projects.earthengine.app/view/climate-explorer"
+
+
+def test_climate_explorer_page(site):
+    html = page("projects/climate-explorer.html")
+    body = re.search(r"<main.*?</main>", html, re.S).group(0)
+    assert f'href="{CE_APP}"' in body
+    examples = re.findall(rf'href="{re.escape(CE_APP)}#([^"]+)"', body)
+    assert len(examples) == 3
+    for ex in examples:
+        assert ex.endswith(";") and "lat=" in ex and "lon=" in ex, ex
+    for name in ("CHIRPS", "IMERG", "ERA5-Land", "gridMET", "MODIS", "TerraClimate"):
+        assert name in body, name
+    assert "Contains modified Copernicus Climate Change Service information" in body
+    assert "December" in body  # precompute still running
+    assert "beta" not in body.lower()
+    imgs = re.findall(r'src="\.\./assets/img/(ce-[^"]+)"', body)
+    assert len(set(imgs)) >= 3, imgs
+    assert "glightbox" in html  # screenshots open full size
+
+
+def test_about_links_climate_explorer(site):
+    assert "projects/climate-explorer.html" in page("about.html")

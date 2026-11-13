@@ -29,6 +29,8 @@ I work across the whole arc of a project:
 - **Statistics:** spatial statistics, machine learning, Bayesian inference, species distribution
   models
 - **Tools:** Python, R, QGIS, GPU model training on Stanford's computing cluster
+- **Apps:** [Climate Explorer](projects/climate-explorer.qmd), an Earth Engine app for planning
+  fieldwork around rain, heat, wind and clear skies
 
 ## Collaborators
 

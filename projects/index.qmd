@@ -23,6 +23,12 @@ listing:
     type: grid
     fields: [image, title, description]
     image-height: 200px
+  - id: tools
+    contents:
+      - climate-explorer.qmd
+    type: grid
+    fields: [image, title, description]
+    image-height: 200px
 ---
 
 ## Drone mapping
@@ -38,4 +44,9 @@ listing:
 ## Image identification
 
 ::: {#identification}
+:::
+
+## Tools
+
+::: {#tools}
 :::
