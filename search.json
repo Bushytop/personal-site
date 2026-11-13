@@ -28,88 +28,46 @@
     "text": "Discarded tires and trash collect rainwater and are some of the most productive breeding sites for the mosquito that spreads dengue. Finding them on foot is slow and misses many.\n\nIndonesia: I trained the deep learning model that finds tires in drone imagery of Makassar, and I take the imagery from raw drone photos to finished maps. I’m now building the next model, which sorts trash piles into types as well as finding tires.\nKenya: the same group built a way to spot trash piles and tires in drone images and checked it against surveys on foot.\nCosta Rica: I planned drone flights in two regions and lead the analysis: testing whether our tire model works in towns it was never trained on, and scaling drone maps up to satellite imagery.\n\n\n\n\nPapers: Hassan, Chamberlin et al. 2026, Remote Sensing Applications: Society and Environment · Woo et al. 2026, Parasites & Vectors · Tarpenning et al. 2025, Parasites & Vectors · Rosser et al. 2024, Environmental Science and Pollution Research · Bramante et al. 2026, BMC Global and Public Health\nCode: Aedes-Tire-Detection (tire model, MIT license)\nFigures from Hassan, Chamberlin et al. 2026, CC BY-NC."
   },
   {
-    "objectID": "projects/brazil-snail-habitat.html",
-    "href": "projects/brazil-snail-habitat.html",
-    "title": "Snail habitat, Brazil",
+    "objectID": "projects/climate-explorer.html",
+    "href": "projects/climate-explorer.html",
+    "title": "Climate Explorer",
     "section": "",
-    "text": "In July and August 2019 I flew drone surveys of ponds, streams and pastures at schistosomiasis study sites in southeastern Brazil, alongside snail sampling on the ground.\nThe wider Brazil work maps where the snails can live across the country, and how climate and growing cities are shifting that range, using satellite data and species models.\n\n\n\nPapers: Glidden et al. 2024, Nature Communications · Singleton et al. 2024, PLOS Global Public Health · da Silva et al. 2024, PLOS NTD"
+    "text": "Open Climate Explorer\nClick a point or draw an area anywhere on land, and Climate Explorer shows what the weather is like there: rain, heat, wind and the odds of a clear sky when satellites pass over. You can look by month, across years, by day of the month and by hour of the day.\nI built it to plan fieldwork. Monthly totals tell you January is wet in Makassar, but not whether a typical January day leaves a few dry daylight hours for mosquito larval sampling or a drone flight. Hourly satellite rainfall answers that: in 2023–2025, rain fell on about nine January days in ten, yet three days in four still had a dry daylight window of four hours or more."
   },
   {
-    "objectID": "privacy.html",
-    "href": "privacy.html",
-    "title": "Privacy",
+    "objectID": "projects/climate-explorer.html#try-it",
+    "href": "projects/climate-explorer.html#try-it",
+    "title": "Climate Explorer",
+    "section": "Try it",
+    "text": "Try it\n\nMakassar, Indonesia, in January: a typical day, hour by hour\nSaint-Louis, Senegal, in August: rainy-season rain year by year\nTampa Bay, Florida, in August: the afternoon thunderstorm peak, in °F\n\nSome views compute when you ask for them and take about 30 seconds.\n\n\n\n\nMakassar in January: rain chance and temperature by hour\n\n\n\n\n\nSaint-Louis, Senegal: August rain in each year\n\n\n\n\n\nTampa in August: rain peaks mid-afternoon"
+  },
+  {
+    "objectID": "projects/climate-explorer.html#data-and-limits",
+    "href": "projects/climate-explorer.html#data-and-limits",
+    "title": "Climate Explorer",
+    "section": "Data and limits",
+    "text": "Data and limits\n\nRain: CHIRPS (0.05°, about 5 km) for monthly totals and IMERG V07 (0.1°) for daily and hourly rain. CHIRPS covers 50°S–50°N; outside that band, rain comes from ERA5-Land.\nTemperature, humidity and wind: ERA5-Land (0.1°), with gusts from ERA5 (0.25°). In the contiguous US, daily temperature comes from gridMET (4 km), which is calibrated to weather stations. Elsewhere ERA5-Land can run a few degrees cool on daily highs in hot, humid places.\nClear sky: MODIS cloud state at the morning (Terra, about 10:30) and early afternoon (Aqua, about 13:30) passes, at 1 km, over the last five years.\nLong-term averages: 1991–2020. TerraClimate (about 4 km) is an optional source for monthly temperature.\nA clicked point reads one grid cell, about 10 km across for most layers, not a weather station. A drawn area reports the average over its pixels. Every view names its dataset, resolution, years and units.\nThis is climate and recent history, not a forecast.\nPrecomputed layers are filling in through December 2026. Until they’re done, dry-window and wind numbers compute when you ask, one month at a time."
+  },
+  {
+    "objectID": "projects/climate-explorer.html#credits",
+    "href": "projects/climate-explorer.html#credits",
+    "title": "Climate Explorer",
+    "section": "Credits",
+    "text": "Credits\nData: CHIRPS (Climate Hazards Center, UC Santa Barbara); IMERG (NASA Global Precipitation Measurement); ERA5 and ERA5-Land (ECMWF, Copernicus Climate Change Service); gridMET and TerraClimate (Climatology Lab); MODIS (NASA). Contains modified Copernicus Climate Change Service information 2026. Runs on Google Earth Engine; map data © Google."
+  },
+  {
+    "objectID": "projects/borneo-canopy-height.html",
+    "href": "projects/borneo-canopy-height.html",
+    "title": "Forest canopy height, Borneo",
     "section": "",
-    "text": "Last updated November 12, 2026."
+    "text": "Canopy height is a good guide to how much carbon a forest holds and where it is being degraded. Measuring it usually takes airborne lidar, which is costly and covers only narrow strips.\nI led a project that trained a deep learning model on lidar from 85 sites across Indonesian Borneo, paired with free satellite and terrain data. The model can predict canopy height at 30 m across Kalimantan wherever lidar is missing, and it was more accurate than the tree-based methods common in the field.\n\n\n\nForest loss. Building on the canopy height model, I mapped forest loss around villages in West Kalimantan for a study of how health care and livelihood programs held up during the pandemic.\nPapers: Chamberlin et al. 2025, Remote Sensing · Hopkins et al. 2026, The Lancet Planetary Health\nNews: Stanford Woods Institute, July 2026\nCode: canopy_height_ml (MIT license)\nFigures from Chamberlin et al. 2025, CC BY 4.0."
   },
   {
-    "objectID": "privacy.html#this-site",
-    "href": "privacy.html#this-site",
-    "title": "Privacy",
-    "section": "This site",
-    "text": "This site\nThis site has no analytics, cookies or tracking scripts of its own. It is hosted on GitHub Pages, which keeps standard server logs, including IP addresses, under GitHub’s privacy statement.\nThe Photo & video page embeds YouTube videos in privacy-enhanced mode, which sets no YouTube cookies until you play a video; playback then falls under Google’s privacy policy. That page also loads its photo viewer from the jsDelivr CDN, which sees your IP address like any web host."
-  },
-  {
-    "objectID": "privacy.html#map-apps",
-    "href": "privacy.html#map-apps",
-    "title": "Privacy",
-    "section": "Map apps",
-    "text": "Map apps\nThe Earth Engine map apps linked from my project pages open without sign-in and collect nothing about you. Google runs them under its privacy policy."
-  },
-  {
-    "objectID": "privacy.html#google-sign-in",
-    "href": "privacy.html#google-sign-in",
-    "title": "Privacy",
-    "section": "Google sign-in",
-    "text": "Google sign-in\nNone of my public pages or apps ask you to sign in. Any tool of mine that uses Google sign-in is for my own account only, and its use of data from Google APIs follows the Google API Services User Data Policy, including the Limited Use requirements.\nQuestions: see the contact page."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Andy Chamberlin",
+    "objectID": "media.html",
+    "href": "media.html",
+    "title": "Media",
     "section": "",
-    "text": "Drone and satellite mapping of landscapes and disease risk.\n  \n\n\n\n  I'm a research data scientist at Stanford. I use drones, satellites and deep learning to\n  map ecological change across landscapes and pinpoint where disease risk is highest. I lead the\n  drone and remote sensing work, from study design to finished maps, on projects in Senegal,\n  Brazil, Costa Rica, Indonesia and Kenya. I also shoot and edit photo and video in the field.\n\n\n\n  \n    Drone mapping & spatial analysis\n    Mosquito and snail habitat, vegetation and water mapping, crop monitoring, terrain and drainage.\n  \n  \n    Satellite remote sensing & modeling\n    Regional risk maps, habitat and species models, statistical modeling, and scaling drone results up to satellite.\n  \n  \n    Computer vision & deep learning\n    Custom models that find objects and map land cover in drone and satellite images, from labeled examples to finished maps.\n  \n\n\nProjects\n\n  \n    \n    Snail habitat, Senegal\n    Mapping the water plants where schistosomiasis snails live along the Senegal River.\n  \n  \n    \n    Rice and fish, Senegal\n    Estimating rice yield from drone and satellite imagery in fields stocked with fish.\n  \n  \n    \n    Forest canopy height, Borneo\n    Predicting rainforest height across Indonesian Borneo from free satellite data.\n    Image: Chamberlin et al. 2025, CC BY\n  \n  \n    \n    Mosquito breeding sites\n    Finding discarded tires and trash, where dengue mosquitoes breed, in drone images from Indonesia, Kenya and Costa Rica.\n    Image: Hassan, Chamberlin et al. 2026, CC BY-NC\n  \n\n\n\n  In the media\n  \n    NPR, July 2026: A promising tale from Senegal of fish, rice … and dangerous worms\n    Stanford Report, April 2026: Drones and AI take flight to combat mosquito-borne disease\n    Stanford Report, March 2026: AI platform maps disease risk from space\n    Stanford HAI, March 2020: Bringing AI to a Neglected Tropical Disease\n  \n  All media →\n\n\n\n  Photo & video\n  \n    \n    \n    \n  \n  Drone photos and video from the field and beyond →\n\n\n\n  Get in touch: email"
-  },
-  {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
-    "section": "",
-    "text": "I’m glad to hear about collaborations, drone or satellite mapping projects, and speaking invitations.\nEmail: email\nElsewhere: ORCID · Google Scholar · GitHub · LinkedIn"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "I’m a research data scientist at Stanford University in Disease Ecology in a Changing World (DECO), a research initiative of the Stanford Center for Human and Planetary Health co-led by Giulio De Leo and Erin Mordecai. I also work closely with Joelle Rosser’s lab on dengue. I lead the drone and remote sensing work, from study design through published maps."
-  },
-  {
-    "objectID": "about.html#what-i-do",
-    "href": "about.html#what-i-do",
-    "title": "About",
-    "section": "What I do",
-    "text": "What I do\nI work across the whole arc of a project:\n\nShaping the questions and writing the grants\nDesigning studies and planning drone missions\nProcessing and calibrating drone and satellite imagery\nBuilding computer vision models that pull features out of that imagery\nAnalysis and modeling\nPresentations and papers"
-  },
-  {
-    "objectID": "about.html#methods",
-    "href": "about.html#methods",
-    "title": "About",
-    "section": "Methods",
-    "text": "Methods\n\nImagery: drone mapping, multispectral and spectral analysis, radiometric calibration, satellite imagery and Google Earth Engine\nTerrain and water: elevation models, hydrological modeling and flow routing\nComputer vision: deep learning to detect objects and map land cover, testing models in new places, scaling drone results up to satellite\nStatistics: spatial statistics, machine learning, Bayesian inference, species distribution models\nTools: Python, R, QGIS, GPU model training on Stanford’s computing cluster"
-  },
-  {
-    "objectID": "about.html#collaborators",
-    "href": "about.html#collaborators",
-    "title": "About",
-    "section": "Collaborators",
-    "text": "Collaborators\nThis work depends on field teams, labs and partners in Senegal, Brazil, Kenya, Indonesia and Costa Rica, and on the scientists who lead these projects."
-  },
-  {
-    "objectID": "about.html#background",
-    "href": "about.html#background",
-    "title": "About",
-    "section": "Background",
-    "text": "Background\n\nB.S., Biology, University of Wisconsin–Madison\nFAA Part 107 remote pilot; private pilot license\nConsultant to Conservation International, mapping water-management infrastructure in sub-Saharan Africa (2019–2020)\nFrench and Spanish\nField photography and video"
+    "text": "Coverage of projects and papers I’ve worked on, newest first. Headlines as published.\n\n\n2026-07 · Stanford Global Health · Harnessing AI and drones to combat mosquito-borne disease in a changing climate\n\n\n2026-07 · Stanford Woods Institute · Community-led health and livelihood programs helped protect rainforests during the pandemic\n\n\n2026-07 · NPR · A promising tale from Senegal of fish, rice … and dangerous worms\n\n\n2026-04 · Stanford Report · Drones and AI take flight to combat mosquito-borne disease\n\n\n2026-03 · Stanford Report · AI platform maps disease risk from space\n\n\n2026-03 · Stanford HAI · How a HAI Seed Grant Helped Launch a Disease-Fighting AI Platform\n\n\n2026-01 · Stanford Report · Researchers work to outrun the risk of ‘river fever’\n\n\n2025-09 · PLOS (EurekAlert!) · Reintroducing native African catfish into Lake Victoria reduced snail hosts and lowered schistosomiasis infection intensity in primary-school-aged children\n\n\n2025-06 · Frontiers for Young Minds · How Removing Overgrown Water Plants Can Help Kids Stay Healthy and Improve The Planet\n\n\n2024-08 · Stanford Report · Forecasting climate’s impact on a debilitating disease\n\n\n2024-06 · Stanford Global Health · Tracking trash and the risk of mosquito-borne disease with drones\n\n\n2023-08 · National Science Foundation · Eliminating public health scourge can also benefit agriculture\n\n\n2023-05 · Stanford Magazine · Just Add Prawns\n\n\n2020-10 · Stanford Global Health · Accessible Healthcare Could Be Key to Solving Climate Crisis\n\n\n2020-03 · Stanford HAI · Bringing AI to a Neglected Tropical Disease\n\n\n2019-10 · Stanford Woods Institute · Satellites and Drones Could Help Slow Tropical Disease\n\n\n2019-03 · bioGraphic (California Academy of Sciences) · Protected by Prawns"
   },
   {
     "objectID": "gallery.html",
@@ -140,18 +98,88 @@
     "text": "For fun\nFlights in California, Florida and Tennessee."
   },
   {
-    "objectID": "media.html",
-    "href": "media.html",
-    "title": "Media",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "Coverage of projects and papers I’ve worked on, newest first. Headlines as published.\n\n\n2026-07 · Stanford Global Health · Harnessing AI and drones to combat mosquito-borne disease in a changing climate\n\n\n2026-07 · Stanford Woods Institute · Community-led health and livelihood programs helped protect rainforests during the pandemic\n\n\n2026-07 · NPR · A promising tale from Senegal of fish, rice … and dangerous worms\n\n\n2026-04 · Stanford Report · Drones and AI take flight to combat mosquito-borne disease\n\n\n2026-03 · Stanford Report · AI platform maps disease risk from space\n\n\n2026-03 · Stanford HAI · How a HAI Seed Grant Helped Launch a Disease-Fighting AI Platform\n\n\n2026-01 · Stanford Report · Researchers work to outrun the risk of ‘river fever’\n\n\n2025-09 · PLOS (EurekAlert!) · Reintroducing native African catfish into Lake Victoria reduced snail hosts and lowered schistosomiasis infection intensity in primary-school-aged children\n\n\n2025-06 · Frontiers for Young Minds · How Removing Overgrown Water Plants Can Help Kids Stay Healthy and Improve The Planet\n\n\n2024-08 · Stanford Report · Forecasting climate’s impact on a debilitating disease\n\n\n2024-06 · Stanford Global Health · Tracking trash and the risk of mosquito-borne disease with drones\n\n\n2023-08 · National Science Foundation · Eliminating public health scourge can also benefit agriculture\n\n\n2023-05 · Stanford Magazine · Just Add Prawns\n\n\n2020-10 · Stanford Global Health · Accessible Healthcare Could Be Key to Solving Climate Crisis\n\n\n2020-03 · Stanford HAI · Bringing AI to a Neglected Tropical Disease\n\n\n2019-10 · Stanford Woods Institute · Satellites and Drones Could Help Slow Tropical Disease\n\n\n2019-03 · bioGraphic (California Academy of Sciences) · Protected by Prawns"
+    "text": "I’m a research data scientist at Stanford University in Disease Ecology in a Changing World (DECO), a research initiative of the Stanford Center for Human and Planetary Health co-led by Giulio De Leo and Erin Mordecai. I also work closely with Joelle Rosser’s lab on dengue. I lead the drone and remote sensing work, from study design through published maps."
   },
   {
-    "objectID": "projects/borneo-canopy-height.html",
-    "href": "projects/borneo-canopy-height.html",
-    "title": "Forest canopy height, Borneo",
+    "objectID": "about.html#what-i-do",
+    "href": "about.html#what-i-do",
+    "title": "About",
+    "section": "What I do",
+    "text": "What I do\nI work across the whole arc of a project:\n\nShaping the questions and writing the grants\nDesigning studies and planning drone missions\nProcessing and calibrating drone and satellite imagery\nBuilding computer vision models that pull features out of that imagery\nAnalysis and modeling\nPresentations and papers"
+  },
+  {
+    "objectID": "about.html#methods",
+    "href": "about.html#methods",
+    "title": "About",
+    "section": "Methods",
+    "text": "Methods\n\nImagery: drone mapping, multispectral and spectral analysis, radiometric calibration, satellite imagery and Google Earth Engine\nTerrain and water: elevation models, hydrological modeling and flow routing\nComputer vision: deep learning to detect objects and map land cover, testing models in new places, scaling drone results up to satellite\nStatistics: spatial statistics, machine learning, Bayesian inference, species distribution models\nTools: Python, R, QGIS, GPU model training on Stanford’s computing cluster\nApps: Climate Explorer, an Earth Engine app for planning fieldwork around rain, heat, wind and clear skies"
+  },
+  {
+    "objectID": "about.html#collaborators",
+    "href": "about.html#collaborators",
+    "title": "About",
+    "section": "Collaborators",
+    "text": "Collaborators\nThis work depends on field teams, labs and partners in Senegal, Brazil, Kenya, Indonesia and Costa Rica, and on the scientists who lead these projects."
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About",
+    "section": "Background",
+    "text": "Background\n\nB.S., Biology, University of Wisconsin–Madison\nFAA Part 107 remote pilot; private pilot license\nConsultant to Conservation International, mapping water-management infrastructure in sub-Saharan Africa (2019–2020)\nFrench and Spanish\nField photography and video"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
     "section": "",
-    "text": "Canopy height is a good guide to how much carbon a forest holds and where it is being degraded. Measuring it usually takes airborne lidar, which is costly and covers only narrow strips.\nI led a project that trained a deep learning model on lidar from 85 sites across Indonesian Borneo, paired with free satellite and terrain data. The model can predict canopy height at 30 m across Kalimantan wherever lidar is missing, and it was more accurate than the tree-based methods common in the field.\n\n\n\nForest loss. Building on the canopy height model, I mapped forest loss around villages in West Kalimantan for a study of how health care and livelihood programs held up during the pandemic.\nPapers: Chamberlin et al. 2025, Remote Sensing · Hopkins et al. 2026, The Lancet Planetary Health\nNews: Stanford Woods Institute, July 2026\nCode: canopy_height_ml (MIT license)\nFigures from Chamberlin et al. 2025, CC BY 4.0."
+    "text": "I’m glad to hear about collaborations, drone or satellite mapping projects, and speaking invitations.\nEmail: email\nElsewhere: ORCID · Google Scholar · GitHub · LinkedIn"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Andy Chamberlin",
+    "section": "",
+    "text": "Drone and satellite mapping of landscapes and disease risk.\n  \n\n\n\n  I'm a research data scientist at Stanford. I use drones, satellites and deep learning to\n  map ecological change across landscapes and pinpoint where disease risk is highest. I lead the\n  drone and remote sensing work, from study design to finished maps, on projects in Senegal,\n  Brazil, Costa Rica, Indonesia and Kenya. I also shoot and edit photo and video in the field.\n\n\n\n  \n    Drone mapping & spatial analysis\n    Mosquito and snail habitat, vegetation and water mapping, crop monitoring, terrain and drainage.\n  \n  \n    Satellite remote sensing & modeling\n    Regional risk maps, habitat and species models, statistical modeling, and scaling drone results up to satellite.\n  \n  \n    Computer vision & deep learning\n    Custom models that find objects and map land cover in drone and satellite images, from labeled examples to finished maps.\n  \n\n\nProjects\n\n  \n    \n    Snail habitat, Senegal\n    Mapping the water plants where schistosomiasis snails live along the Senegal River.\n  \n  \n    \n    Rice and fish, Senegal\n    Estimating rice yield from drone and satellite imagery in fields stocked with fish.\n  \n  \n    \n    Forest canopy height, Borneo\n    Predicting rainforest height across Indonesian Borneo from free satellite data.\n    Image: Chamberlin et al. 2025, CC BY\n  \n  \n    \n    Mosquito breeding sites\n    Finding discarded tires and trash, where dengue mosquitoes breed, in drone images from Indonesia, Kenya and Costa Rica.\n    Image: Hassan, Chamberlin et al. 2026, CC BY-NC\n  \n\n\n\n  In the media\n  \n    NPR, July 2026: A promising tale from Senegal of fish, rice … and dangerous worms\n    Stanford Report, April 2026: Drones and AI take flight to combat mosquito-borne disease\n    Stanford Report, March 2026: AI platform maps disease risk from space\n    Stanford HAI, March 2020: Bringing AI to a Neglected Tropical Disease\n  \n  All media →\n\n\n\n  Photo & video\n  \n    \n    \n    \n  \n  Drone photos and video from the field and beyond →\n\n\n\n  Get in touch: email"
+  },
+  {
+    "objectID": "privacy.html",
+    "href": "privacy.html",
+    "title": "Privacy",
+    "section": "",
+    "text": "Last updated November 12, 2026."
+  },
+  {
+    "objectID": "privacy.html#this-site",
+    "href": "privacy.html#this-site",
+    "title": "Privacy",
+    "section": "This site",
+    "text": "This site\nThis site has no analytics, cookies or tracking scripts of its own. It is hosted on GitHub Pages, which keeps standard server logs, including IP addresses, under GitHub’s privacy statement.\nThe Photo & video page embeds YouTube videos in privacy-enhanced mode, which sets no YouTube cookies until you play a video; playback then falls under Google’s privacy policy. That page also loads its photo viewer from the jsDelivr CDN, which sees your IP address like any web host."
+  },
+  {
+    "objectID": "privacy.html#map-apps",
+    "href": "privacy.html#map-apps",
+    "title": "Privacy",
+    "section": "Map apps",
+    "text": "Map apps\nThe Earth Engine map apps linked from my project pages open without sign-in and collect nothing about you. Google runs them under its privacy policy."
+  },
+  {
+    "objectID": "privacy.html#google-sign-in",
+    "href": "privacy.html#google-sign-in",
+    "title": "Privacy",
+    "section": "Google sign-in",
+    "text": "Google sign-in\nNone of my public pages or apps ask you to sign in. Any tool of mine that uses Google sign-in is for my own account only, and its use of data from Google APIs follows the Google API Services User Data Policy, including the Limited Use requirements.\nQuestions: see the contact page."
+  },
+  {
+    "objectID": "projects/brazil-snail-habitat.html",
+    "href": "projects/brazil-snail-habitat.html",
+    "title": "Snail habitat, Brazil",
+    "section": "",
+    "text": "In July and August 2019 I flew drone surveys of ponds, streams and pastures at schistosomiasis study sites in southeastern Brazil, alongside snail sampling on the ground.\nThe wider Brazil work maps where the snails can live across the country, and how climate and growing cities are shifting that range, using satellite data and species models.\n\n\n\nPapers: Glidden et al. 2024, Nature Communications · Singleton et al. 2024, PLOS Global Public Health · da Silva et al. 2024, PLOS NTD"
   },
   {
     "objectID": "projects/index.html",
@@ -180,6 +208,13 @@
     "title": "Projects",
     "section": "Image identification",
     "text": "Image identification\n\n\n\n\n\n\n\n\n\n\nSnail and parasite identification\n\n\nDeep learning that identifies disease-carrying snails and schistosome parasites from photos.\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/index.html#tools",
+    "href": "projects/index.html#tools",
+    "title": "Projects",
+    "section": "Tools",
+    "text": "Tools\n\n\n\n\n\n\n\n\n\n\nClimate Explorer\n\n\nAn Earth Engine app for the weather and climate of any place on land: rain, heat, wind and clear-sky odds, down to the hour, for planning fieldwork and drone flights.\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/senegal-rice-fish.html",

@@ -147,6 +147,28 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   });
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-tools .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-tools'] = new List('listing-tools', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
   </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
@@ -464,7 +486,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="drone-mapping">Drone mapping</h2>
 <div id="listing-drone" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-date-sort="1704067200000" data-listing-file-modified-sort="1794496683494" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="216">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1704067200000" data-listing-file-modified-sort="1794539451243" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="216">
 <a href="../projects/mosquito-breeding-sites.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -480,7 +502,7 @@ Mosquito breeding sites: Indonesia, Kenya, Costa Rica
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="1754006400000" data-listing-file-modified-sort="1794496683494" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="111">
+<div class="g-col-1" data-index="1" data-listing-date-sort="1754006400000" data-listing-file-modified-sort="1794539451243" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="111">
 <a href="../projects/senegal-rice-fish.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -496,7 +518,7 @@ Rice and fish, Senegal
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-date-sort="1563753600000" data-listing-file-modified-sort="1794496683494" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="97">
+<div class="g-col-1" data-index="2" data-listing-date-sort="1563753600000" data-listing-file-modified-sort="1794539451243" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="97">
 <a href="../projects/brazil-snail-habitat.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -512,7 +534,7 @@ Snail habitat, Brazil
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-listing-date-sort="1470009600000" data-listing-file-modified-sort="1794496683494" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="154">
+<div class="g-col-1" data-index="3" data-listing-date-sort="1470009600000" data-listing-file-modified-sort="1794539451243" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="154">
 <a href="../projects/senegal-snail-habitat.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -536,7 +558,7 @@ Snail habitat, Senegal
 <h2 class="anchored" data-anchor-id="satellite-mapping">Satellite mapping</h2>
 <div id="listing-satellite" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-date-sort="1759276800000" data-listing-file-modified-sort="1794496683494" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="157">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1759276800000" data-listing-file-modified-sort="1794539451243" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="157">
 <a href="../projects/borneo-canopy-height.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -552,7 +574,7 @@ Forest canopy height, Borneo
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="1646092800000" data-listing-file-modified-sort="1794496683494" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="132">
+<div class="g-col-1" data-index="1" data-listing-date-sort="1646092800000" data-listing-file-modified-sort="1794539451243" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="132">
 <a href="../projects/senegal-satellite-habitat.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -576,7 +598,7 @@ Snail habitat from space, Senegal River basin
 <h2 class="anchored" data-anchor-id="image-identification">Image identification</h2>
 <div id="listing-identification" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-date-sort="1626307200000" data-listing-file-modified-sort="1794496683494" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="117">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1626307200000" data-listing-file-modified-sort="1794539451243" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="117">
 <a href="../projects/snail-parasite-id.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -588,6 +610,30 @@ Snail and parasite identification
 </h5>
 <div class="card-text listing-description">
 <p>Deep learning that identifies disease-carrying snails and schistosome parasites from photos.</p>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="tools" class="level2">
+<h2 class="anchored" data-anchor-id="tools">Tools</h2>
+<div id="listing-tools" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1794441600000" data-listing-file-modified-sort="1794539451243" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="476">
+<a href="../projects/climate-explorer.html" class="quarto-grid-link no-external-icon">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../assets/img/ce-tampa.jpg" class="thumbnail-image card-img" style="height: 200px;" alt="Climate Explorer at Tampa in August: rain chance peaking in the afternoon and temperature by hour">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Climate Explorer
+</h5>
+<div class="card-text listing-description">
+<p>An Earth Engine app for the weather and climate of any place on land: rain, heat, wind and clear-sky odds, down to the hour, for planning fieldwork and drone flights.</p>
 </div>
 </div>
 </div></a>
