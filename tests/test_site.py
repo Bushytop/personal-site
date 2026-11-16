@@ -444,3 +444,9 @@ def test_home_quick_links_at_bottom_no_duplicates(site):
     assert html.find('class="quick-links"') > html.find('class="gallery-strip')
     for dup in ("All projects", "All media", "Drone photos and video from"):
         assert dup not in html, dup
+
+
+def test_gallery_flight_rules_note(site):
+    html = page("gallery.html")
+    assert html.count("Flown under FAA and park rules in effect at the time") == 1
+    assert "Biscayne National Park" in html and "wildlife refuges" in html
