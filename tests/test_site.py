@@ -424,3 +424,16 @@ def test_climate_explorer_page(site):
 
 def test_about_links_climate_explorer(site):
     assert "projects/climate-explorer.html" in page("about.html")
+
+
+def test_home_section_heads_link_to_pages(site):
+    html = page("index.html")
+    heads = re.findall(r'<h2 class="section-head[^"]*"><a href="([^"]+)"', html)
+    assert heads == ["projects/index.html", "media.html", "gallery.html"]
+
+
+def test_home_quick_links_cover_navbar(site):
+    sec = re.search(r'<nav class="quick-links".*?</nav>', page("index.html"), re.S).group(0)
+    for href in ("about.html", "projects/index.html", "publications.html", "media.html",
+                 "gallery.html", "contact.html"):
+        assert f'href="{href}"' in sec, href

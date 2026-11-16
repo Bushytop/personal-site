@@ -15,6 +15,15 @@ include-in-header: _includes/jsonld.html
   </div>
 </header>
 
+<nav class="quick-links" aria-label="Site pages">
+  <a href="about.html">About</a>
+  <a href="projects/index.html">Projects</a>
+  <a href="publications.html">Publications</a>
+  <a href="media.html">Media</a>
+  <a href="gallery.html">Photo &amp; video</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
 <section class="intro">
   <p>I'm a research data scientist at Stanford. I use drones, satellites and deep learning to
   map ecological change across landscapes and pinpoint where disease risk is highest. I lead the
@@ -37,7 +46,7 @@ include-in-header: _includes/jsonld.html
   </div>
 </section>
 
-<h2 class="section-head">Projects</h2>
+<h2 class="section-head"><a href="projects/index.html">Projects <span aria-hidden="true">→</span></a></h2>
 <section class="tiles">
   <a class="project-tile" href="projects/senegal-snail-habitat.html">
     <img src="assets/img/senegal-snail-tile.jpg" alt="Pond edged with dense water plants near a village in northern Senegal" loading="lazy">
@@ -62,9 +71,10 @@ include-in-header: _includes/jsonld.html
     <p class="credit">Image: Hassan, Chamberlin et al. 2026, CC BY-NC</p>
   </a>
 </section>
+<p><a href="projects/index.html">All projects →</a></p>
 
 <section class="media-highlights">
-  <h2 class="section-head">In the media</h2>
+  <h2 class="section-head"><a href="media.html">In the media <span aria-hidden="true">→</span></a></h2>
   <ul>
     <li><a href="https://www.npr.org/2026/07/12/nx-s1-5803170/farmers-fish-rice-snails-tropical-disease">NPR, July 2026: A promising tale from Senegal of fish, rice … and dangerous worms</a></li>
     <li><a href="https://news.stanford.edu/stories/2026/04/mosquito-borne-disease-breeding-sites-drones-ai">Stanford Report, April 2026: Drones and AI take flight to combat mosquito-borne disease</a></li>
@@ -75,7 +85,7 @@ include-in-header: _includes/jsonld.html
 </section>
 
 <section class="gallery-strip">
-  <h2 class="section-head">Photo &amp; video</h2>
+  <h2 class="section-head"><a href="gallery.html">Photo &amp; video <span aria-hidden="true">→</span></a></h2>
   <a href="gallery.html" class="strip-photos">
     <img src="assets/img/gallery-sen-meander-thumb.jpg" alt="River meander and irrigated fields in the Senegal River valley" loading="lazy">
     <img src="assets/img/gallery-garrapata-thumb.jpg" alt="Big Sur coastline at Garrapata with sunset light on the hills" loading="lazy">
