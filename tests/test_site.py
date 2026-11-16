@@ -437,3 +437,10 @@ def test_home_quick_links_cover_navbar(site):
     for href in ("about.html", "projects/index.html", "publications.html", "media.html",
                  "gallery.html", "contact.html"):
         assert f'href="{href}"' in sec, href
+
+
+def test_home_quick_links_at_bottom_no_duplicates(site):
+    html = page("index.html")
+    assert html.find('class="quick-links"') > html.find('class="gallery-strip')
+    for dup in ("All projects", "All media", "Drone photos and video from"):
+        assert dup not in html, dup
