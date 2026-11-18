@@ -96,3 +96,13 @@
 - {root: app_shots, src: climate_explorer_makassar_jan_days.png, out: ce-makassar.jpg, thumb: 800, crop: [420, 70, 1600, 1000], alt: "Climate Explorer at Makassar in January: a table of rain, dry-window, wind, heat and clear-sky odds, and charts of rain chance and temperature by hour"}
 - {root: app_shots, src: climate_explorer_saintlouis_aug_years.png, out: ce-saint-louis.jpg, thumb: 800, crop: [420, 70, 1600, 1000], alt: "Climate Explorer at Saint-Louis, Senegal: August rain and temperature in each year, with a table of rain by year and month"}
 - {root: app_shots, src: climate_explorer_tampa_aug_days.png, out: ce-tampa.jpg, thumb: 800, crop: [420, 70, 1600, 1000], alt: "Climate Explorer at Tampa in August: rain chance peaking in the afternoon and temperature by hour, in Fahrenheit"}
+# Drone products page: renderings of April 2022 scoping-trip sites not used in the study; site
+# names stay off the site. Built by render_previews.py and make_web.py beside the products_web root.
+- {root: products_web, src: senegal-a_rgb.png, out: dp-a-rgb.jpg, alt: "Drone orthomosaic of irrigated garden plots, a canal, a road and trees in the Senegal River valley"}
+- {root: products_web, src: senegal-a_dsm.png, out: dp-a-dsm.jpg, alt: "Shaded surface model of the same fields: plot edges, berms and tree crowns in relief"}
+- {root: products_web, src: senegal-a_chm.png, out: dp-a-chm.jpg, alt: "Vegetation height of the same fields: trees in dark green against flat ground"}
+- {root: products_web, src: senegal-a_ocn.png, out: dp-a-ocn.jpg, alt: "Vegetation index of the same fields: green crop plots, red bare ground and road"}
+- {root: products_web, src: senegal-b_rgb.png, out: dp-b-rgb.jpg, alt: "Drone orthomosaic of a dirt road, scattered trees, a drainage line and planted rows in the Senegal River valley"}
+- {root: products_web, src: senegal-b_dsm.png, out: dp-b-dsm.jpg, alt: "Shaded surface model of the same area: the land sloping toward the drainage line, with trees in relief"}
+- {root: products_web, src: senegal-b_chm.png, out: dp-b-chm.jpg, alt: "Vegetation height of the same area: individual trees and shrubs in green"}
+- {root: products_web, src: senegal-b_ocn.png, out: dp-b-ocn.jpg, alt: "Vegetation index of the same area: trees in dark green, the road in red"}

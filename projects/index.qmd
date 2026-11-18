@@ -3,6 +3,7 @@ title: "Projects"
 listing:
   - id: drone
     contents:
+      - drone-products.qmd
       - senegal-snail-habitat.qmd
       - senegal-rice-fish.qmd
       - brazil-snail-habitat.qmd

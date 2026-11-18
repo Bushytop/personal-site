@@ -297,8 +297,8 @@ def test_projects_page_grouped(site):
     heads = ["Drone mapping", "Satellite mapping", "Image identification", "Tools"]
     pos = [html.find(h) for h in heads]
     assert all(x >= 0 for x in pos) and pos == sorted(pos), pos
-    groups = {0: ["senegal-snail-habitat", "senegal-rice-fish", "brazil-snail-habitat",
-                  "mosquito-breeding-sites"],
+    groups = {0: ["drone-products", "senegal-snail-habitat", "senegal-rice-fish",
+                  "brazil-snail-habitat", "mosquito-breeding-sites"],
               1: ["borneo-canopy-height", "senegal-satellite-habitat"],
               2: ["snail-parasite-id"],
               3: ["climate-explorer"]}
@@ -450,3 +450,19 @@ def test_gallery_flight_rules_note(site):
     html = page("gallery.html")
     assert html.count("Flown under FAA and park rules in effect at the time") == 1
     assert "Biscayne National Park" in html and "wildlife refuges" in html
+
+
+def test_drone_products_page(site):
+    html = page("projects/drone-products.html")
+    body = re.search(r"<main.*?</main>", html, re.S).group(0)
+    assert "Senegal River valley, 2022" in body
+    for name in ("Medina", "Temey", "Selguir", "Belel", "Toucalour"):
+        assert name not in html, name
+    assert body.count('class="compare"') == 2
+    for ex in ("a", "b"):
+        for layer in ("rgb", "dsm", "chm", "ocn"):
+            assert f"dp-{ex}-{layer}.jpg" in body, (ex, layer)
+            assert (site / f"assets/img/dp-{ex}-{layer}.jpg").exists(), (ex, layer)
+    for s in ("OpenDroneMap", "Survey3", "relative", "GeoTIFF"):
+        assert s in body, s
+    assert 'type="range"' in body and "compare.js" in html

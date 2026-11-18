@@ -37,3 +37,7 @@ or cleared products (De Leo cleared the Kalimantan canopy height map, 2026-11-11
 - Push to `main`; the `Publish site` workflow renders and pushes `gh-pages`. Repo:
   github.com/Bushytop/personal-site (public since 2026-11-11).
 - Commits here use the GitHub no-reply address (set in this repo's git config); keep it that way.
+- Drone products page (`projects/drone-products.qmd`): renderings from April 2022 Senegal scoping
+  sites that were not in the study. Label them "Senegal River valley, 2022" only; site names stay
+  off the site. Costa Rica Mavic 3 MS examples wait for publication. Sources and scripts live
+  beside the `products_web` image root.
