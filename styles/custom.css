@@ -53,3 +53,20 @@
 .section-head a { color: inherit; text-decoration: none; }
 .section-head a span { color: var(--bs-link-color, #2f6b4f); }
 .section-head a:hover { text-decoration: underline; }
+
+/* Drone products: before/after slider */
+.compare-wrap { margin: 1rem 0 2rem; }
+.layer-tabs { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: .6rem; }
+.layer-tabs button { padding: .3rem .8rem; border: 1px solid rgba(127,127,127,.45); border-radius: 999px;
+  background: transparent; color: inherit; font-size: .9rem; cursor: pointer; }
+.layer-tabs button[aria-pressed="true"] { background: #2f6b4f; border-color: #2f6b4f; color: #fff; }
+.compare { --pos: 50%; position: relative; overflow: hidden; border-radius: 6px; line-height: 0; }
+.compare > img, .compare-top img { width: 100%; height: auto; display: block; }
+.compare-top { position: absolute; inset: 0; clip-path: inset(0 0 0 var(--pos)); }
+.compare-top img { height: 100%; object-fit: cover; }
+.compare::after { content: ""; position: absolute; top: 0; bottom: 0; left: var(--pos); width: 2px;
+  margin-left: -1px; background: #fff; box-shadow: 0 0 4px rgba(0,0,0,.5); pointer-events: none; }
+.compare input[type=range] { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0;
+  opacity: 0; cursor: ew-resize; touch-action: pan-y; }
+.compare input[type=range]:focus-visible + * , .compare:focus-within::after { width: 4px; }
+.layer-caption { font-size: .9rem; opacity: .85; margin-top: .5rem; }
