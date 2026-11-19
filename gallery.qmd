@@ -38,6 +38,13 @@ Biscayne Bay, 2019–2020.
 <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/jE3RHEWOMxw" title="Drone reel: California, Lake Tahoe and Florida" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
 ```
 
+**Cruisin' with Lady C.** Following a red cigarette boat across Biscayne Bay, December 2019.
+Music: "Casa Rosa's Tulum Vibes" by Ricky Tar.
+
+```{=html}
+<div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/NKbhtZYjGkU" title="Cruisin' with Lady C: a red boat on Biscayne Bay" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+```
+
 I also shot some of the footage in bioGraphic's short film
 [*Protected by Prawns*](https://www.biographic.com/protected-by-prawns/) (2019).
 
