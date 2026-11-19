@@ -24,11 +24,12 @@ mapping schistosomiasis snail habitat with drones in Senegal.
 <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/2X4UrFdy08Y" title="Video abstract: mapping schistosomiasis snail habitat with drones, Senegal" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
 ```
 
-**Open House 2018.** A short film I shot and edited in the Senegal River valley for the Hopkins
-Marine Station open house, and have shown in talks since.
+**Open House 2018.** A minute from a film I shot and edited in the Senegal River valley for the
+Hopkins Marine Station open house, and have shown in talks since.
+[Full film (5 min)](https://youtu.be/UvfhiwaCTfc).
 
 ```{=html}
-<div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/UvfhiwaCTfc" title="Open House 2018: drone footage from the Senegal River valley" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+<div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/eLwYoSytg8I" title="Open House 2018: drone footage from the Senegal River valley" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
 ```
 
 **Flights for fun.** Carmel, Big Sur, Chico, the Santa Cruz Mountains, Lake Tahoe, the Florida Keys and
