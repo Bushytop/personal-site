@@ -46,6 +46,14 @@ Music: "Casa Rosa's Tulum Vibes" by Ricky Tar.
 <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/NKbhtZYjGkU" title="Cruisin' with Lady C: a red boat on Biscayne Bay" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
 ```
 
+**Bucks Lake.** A snow day in the Sierra, December 28, 2019. Music: "Deep Haze" by Kevin
+MacLeod ([incompetech.com](https://incompetech.com)), licensed under
+[Creative Commons: By Attribution 4.0](https://creativecommons.org/licenses/by/4.0/).
+
+```{=html}
+<div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/WjS1Di6i0Ls" title="Bucks Lake: a snow day in the Sierra" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+```
+
 I also shot some of the footage in bioGraphic's short film
 [*Protected by Prawns*](https://www.biographic.com/protected-by-prawns/) (2019).
 

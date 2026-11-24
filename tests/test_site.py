@@ -382,7 +382,8 @@ def test_home_links_gallery(site):
 
 
 VIDEOS = {"jE3RHEWOMxw": "reel", "eLwYoSytg8I": "open house cut", "2X4UrFdy08Y": "gsh",
-          "NKbhtZYjGkU": "lady c"}
+          "NKbhtZYjGkU": "lady c",
+          "WjS1Di6i0Ls": "bucks lake"}
 
 
 def test_gallery_embeds_videos_privacy_mode(site):
@@ -398,6 +399,12 @@ def test_gallery_links_full_open_house_film(site):
     html = page("gallery.html")
     assert "youtu.be/UvfhiwaCTfc" in html
     assert "embed/UvfhiwaCTfc" not in html
+
+
+def test_gallery_credits_cc_music(site):
+    html = " ".join(page("gallery.html").split())
+    assert "Deep Haze” by Kevin MacLeod" in html and "incompetech.com" in html
+    assert "creativecommons.org/licenses/by/4.0/" in html
 
 
 def test_snail_page_links_video_abstract(site):
